@@ -1,0 +1,21 @@
+1.实现对应的接口:
+    ①Jakarta.Servlet:
+        ServletContextAttributeListener              服务器
+	ServletContextListener                       
+        ServletRequestAttributeListener
+	ServletRequestListener                       请求对象
+    ②Jakarta.Servlet.http:
+        HttpSessionActivationListener
+	HttpSessionAttributeListener
+	HttpSessionBindingListener
+	HttpSessionIdListener
+	HttpSessionListener                          会话状态
+
+
+2.重写函数:
+void	xxx(ServletContextEvent sce) 创建对象的时候,调用该函数
+void	xxx(ServletContextEvent sce)   准备销毁的时候,调用该函数
+     
+
+
+

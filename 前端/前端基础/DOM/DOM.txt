@@ -1,0 +1,31 @@
+
+
+
+
+	一.创建Dom对象
+
+
+
+getElementById('#') 	         创建iD属性对象
+getElementsByTagName() 	         创建NAME属性对象
+querySelector('.')               创建Class属性对象
+querySelectorAll()               批量创建同类标签对象
+createElement()                  直接创建Dom对象
+
+
+
+
+
+	二.常用函数
+
+
+innerHTML()                   双向绑定内容
+value()                       双向绑定属性值
+style.属性名称()              双向绑定样式属性
+addEventListener()            绑定事件,添加自定义函数
+setInterval()       	      按照指定的时间（毫秒）来调用函数或计算表达式。
+setInterval()       	      不停地调用函数，直到 clearInterval() 被调用或窗口被关闭。
+setInterval()       	      返回的 ID 值可用作 clearInterval() 方法的参数。
+clearInterval()     	      取消setInterval() 函数设定的定时执行操作。
+clearInterval()     	      参数必须是setInterval() 返回的 ID 值。
+

@@ -1,0 +1,32 @@
+CURRENT_DATE ()        				 当前日期
+CURRENT_TIME ()         			 当前时间
+CURRENT_TIMESTAMP ()  				 当前时间截 
+DATE (datetime )       				 只看日期
+ DATE_ADD (date2, INTERVAL d_value d_type )      在date2中加上日期或时间
+DATE_SUB (date2 , INTERVAL d_value d_type )      在date2上减去一个时间
+DATEDIFF (date1 ,date2)                          两个日期差(结果是天)  
+TIMEDIFF(datel,date2)      			 两个时间差(多少小时多少分钟多少秒)
+NOW ()						 当前时间	
+YEAR | Month | DATE (datetime )  	         年月日 
+FROM_UNIXTIME()		
+	    		
+CURDATE 和 CURRENT_DATE		                返回当前系统的日期值
+CURTIME 和 CURRENT_TIME		                返回当前系统的时间值
+
+MONTH				                获取指定日期中的月份
+MONTHNAME		 			获取指定日期中的月份英文名称
+DAYNAME			                        获取指定曰期对应的星期几的英文名称
+DAYOFWEEK					获取指定日期对应的一周的索引位置值
+WEEK				                获取指定日期是一年中的第几周，返回值的范围是否为 0〜52 或 1〜53
+DAYOFYEAR			                获取指定曰期是一年中的第几天，返回值范围是1~366
+DAYOFMONTH					获取指定日期是一个月中是第几天，返回值范围是1~31
+YEAR						获取年份,返回值范围是 1970〜2069
+TIME_TO_SEC					将时间参数转换为秒数
+SEC_TO_TIME					将秒数转换为时间，与TIME_TO_SEC 互为反函数
+DATE_ADD 和 ADDDATE				两个函数功能相同，都是向日期添加指定的时间间隔
+DATE_SUB 和 SUBDATE				两个函数功能相同，都是向日期减去指定的时间间隔
+ADDTIME						时间加法运算，在原始时间上添加指定的时间
+SUBTIME						时间减法运算，在原始时间上减去指定的时间
+DATEDIFF				        获取两个日期之间间隔，返回参数 1 减去参数 2 的值
+DATE_FORMAT					格式化指定的日期，根据参数返回指定格式的值
+WEEKDAY						获取指定日期在一周内的对应的工作日索引

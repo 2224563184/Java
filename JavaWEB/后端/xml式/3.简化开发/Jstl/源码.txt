@@ -1,0 +1,12 @@
+০源码解析:配置文件tld解析
+<tag>
+<description>对该标签的描述</description>
+<name>catch</name> 								 标签的名字
+<tag-class>org.apache.taglibs.standard.tag.common.core.CatchTag</tag-class>	 标签对应的java类。
+<body-content>JSP</body-content> 						 标签体当中可以出现的内容,如果是JSP,
+									     就表示标签体中可以出现符合JSP所有语法的代码。例如EL表达式。
+<attribute><description>对这个属性的描述</description>
+<name>var</name> 								 属性名
+<required>false</required> 							 false表示该属性不是必须的。true表示该属性是必须的。
+<rtexprvalue>false</rtexprvalue>						 这个描述说明了该属性是否支持EL表达式。false表示不支持。true									     表示支持EL表达式。
+</attribute> </tag><c:catch var=""> JSP....</c:catch> 

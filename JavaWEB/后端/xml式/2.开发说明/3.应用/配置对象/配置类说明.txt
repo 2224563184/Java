@@ -1,0 +1,31 @@
+
+                         
+
+函数:
+void   setAttribute()                        向域当中绑定数据
+Object getAttribute(String name)             从域中当中根据name获取数据
+void   removeAttribute(String name )         将域当中绑定的数据移除
+String getServletName()  --                  获取当前Servlet在web.xml中配置的名字
+String getInitParameter(String name) --      获取当前Servlet指定名称的初始化参数的值
+Enumeration getInitParameterNames()  --      获取当前Servlet所有初始化参数的名字组成的枚举
+ServletContext getServletContext()  --       获取代表当前web应用的ServletContext对象
+该操作类似于 map的增删改查操作
+
+
+使用场景:
+           1.所有用户共享的数据。
+           2.这个共享的数据量很小。
+           3.更新共享数据的次数很小。
+
+在以上三个条件都满足的情况下,使用这个应用域对象,可以大大提高我们程序执行效率。
+实际上向应用域当中绑定数据,就相当于把数据放到了缓存(Cache)当中,然后用户访问的时候直接从缓存中取,
+减少IO的操作,大大提升系统的性能,所以缓存技术是提高系统性能的重要手段。
+
+
+说明:
+           1.ServletConfig是一个配置接口
+           2.GenericServlet是它的实现类
+           3.HttpServlet是GenericServlet的子类
+           4.应用域的实现类是单例的
+
+        总结:直接使用HttpServlet就可以使用了

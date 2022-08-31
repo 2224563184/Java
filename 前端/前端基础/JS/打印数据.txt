@@ -1,0 +1,2 @@
+ console.log():      打印到控制台
+ alert():            打印到警告框

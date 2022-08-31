@@ -1,0 +1,39 @@
+
+1.绑定请求路径和映射对象
+     
+   <servlet-mapping>
+        <servlet-name>user</servlet-name> 绑定需要使用的映射类
+        <url-pattern>/pr</url-pattern>    请求路径和html的请求路径要一致, 必须 "/"开头和不能带有项目名
+    </servlet-mapping>
+
+
+2.注册映射对象:
+
+     <servlet>
+        <servlet-name>user</servlet-name>   映射类命名
+        <servlet-class>com.bjpowernode.javaerb.servlet.Student</servlet-class>  映射类的相对路径
+    </servlet>
+
+3.HttpServlet映射子类的函数必须和"html"的请求方式一致
+
+
+4.部署的项目名必须要和html请求的路径的项目名一致
+
+
+
+5.直接创建对象标签
+<load-no-startup>0</load-no-startup>  
+
+
+
+6.Session寿命
+    <session-config>
+        <session-timeout>-1</session-timeout>
+    </session-config>
+
+
+
+7.欢迎页标签
+    <welcome-file-list>
+        <welcome-file>welcome</welcome-file>
+    </welcome-file-list>

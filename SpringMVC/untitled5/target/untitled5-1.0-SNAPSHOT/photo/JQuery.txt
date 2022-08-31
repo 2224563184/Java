@@ -1,0 +1,37 @@
+
+			
+
+				jQuery类库
+
+前置要求:
+1.从 jquery.com 网站下载 jQuery类库
+2.在html 5文档中,使用此标签导入jQuery类库:
+<script src="jquery-1.10.2.min.js"></script>
+
+
+创建jQuery对象:
+
+ 		  $([String]参数);
+
+
+1.参数为[函数]时:	 文档加载后就执行此函数
+2.参数为[标签]时:         创建标签对象[]并且创建jQuery对象
+3.参数为[选择器]时:       创建标签对象并且创建jQuery对象
+①iD属性:	         创建标签对象并且创建jQuery对象 
+②标签名:		 创建标签对象并且创建jQuery对象 
+③class属性:		 创建标签对象并且创建jQuery对象 
+	  
+4.参数为[DOM对象]时:	  doc转换jQuery
+5.参数为[无参]时: 		  直接创建Query对象 
+
+
+
+一.事件方法
+		
+1.click    	 鼠标单击
+2.dblclick	 鼠标双击
+3.mouseenter	 鼠标移动到指定位置
+4.mouseleave	 鼠标离开指定选位置
+5.hover		 鼠标停在指定选位置时要运行的两个函数。
+6.keypress	 键盘松开指定键
+7.

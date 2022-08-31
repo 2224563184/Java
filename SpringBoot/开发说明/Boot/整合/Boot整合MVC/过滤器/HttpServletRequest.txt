@@ -1,0 +1,65 @@
+
+                                HttpServletRequest请求对象
+
+                       请求对象的生命周期非常短, 每一次请求都是一个新的对象
+
+
+一.请求
+
+getMethod()                        			请求方式
+
+getRemoteAddr()                       			iP地址    
+
+getContextPath()                       			 项目名           
+
+getRequestURI()                       			项目名+请求路径
+
+getServletPath()                       			请求路径
+
+setCharracterEncoding()           		 	设置请求编码                      s: html/text;charset=UTF-8
+
+getParameterMap()                			获取Map
+
+getParameterNames()           		          Map的所有key
+
+String   getParameter ()         		          标签name属性值
+
+String[] getParameterValues()    		 同上, 获取同名称的多个值
+
+getParameterValues (String name)  		  根据k，获取v
+
+getAttribute()                   			   根据Key获取Value
+
+setAttribute(Key Value)           			   向共享Map集合添加Key和Value, Key和Value的生命周期跟随调用对象         
+
+removeAttribute()                 			    删除Map键值对    
+
+getRemoteHost()                  			    获取客户端的ip地址
+
+getHeader()                      			    获取请求头
+             
+getMethod()                      			   设置域数据
+
+getAttribute(key)                 			    获取域数据
+
+isAnnotationPresent              			    B类的注解是否在A类上。
+
+getRequestDispatcher("另一个路径") 		    请求转发器对象, 服务器内部转发       /请求路径
+(1)forward(request,  response)     		     转发
+
+
+获取会话
+
+getSession()                       			    会话域对象， 默认自动创建
+
+getSession(true)                   			    同上
+
+getSession(false)              			    获取会话,   取消自动创建
+
+getAttribute()     					   会话对象   
+
+
+
+
+
+

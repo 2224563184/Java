@@ -1,0 +1,12 @@
+
+
+      Graphics.drawimage()方法御用绘制位图，该方法需要一个image参数---代表位图，通过该方法可以绘制出指定的位图
+
+使用步骤：
+       1.创建image的子类对象Bufferedlmage(int width, int height ,int imageType),创建时需要指定位图的宽、高及类型属性
+      此时相当在内存中生成了一张图片
+       2.调用Bufferedimage对象的getGraphics()方法获取画笔，此时就可以往内存中的这张图片内绘图了，绘图的方法和之前学习的一模一样
+       3.调用组件paint方法中提供的drawlmage()方法,一次性内存中的图片Bufferedlmage绘制到特定的组件上
+
+使用位图的好处: 使用位图来绘制组件,相当域实现了图的缓存区,此时绘图时没有之间把图形绘制到组件上,而是先绘制到内存中的BufferedImage上,等全部
+            绘制完毕后,再用一次性的图像显示到组件上          减少刷新重新绘图

@@ -1,0 +1,18 @@
+
+       CardLayout布局管理器以时间而非空间来管理它里面的组件，它将加入容器的所
+     有组件堪称一叠卡片(每个卡片其实就是一个组件)，每次只有最上面的那个Componen
+     才可见；就像一副扑克牌，它们叠在一起，每次只有最上面的一张扑克牌才可见
+
+一、
+CardLayout：
+    void first(Container parent)    翻转到容器的第一张卡片
+    void last(Container parent)     翻转到容器的最后一张卡片。
+    void next(Container parent)     翻转到指定容器的下一张卡片。
+    void previous(Container parent) 翻转到指定容器的前一张卡片。
+    void show​(Container parent, String name) 使用 addLayoutComponent翻转到        翻转到指定的卡片
+                                                 使用指定的 name添加到此布局的组件
+
+二、
+按钮和CardLayout绑定
+    Button
+    void addActionListener(ActionListener l) 添加指定的动作侦听器以从此按钮接收动作事件。

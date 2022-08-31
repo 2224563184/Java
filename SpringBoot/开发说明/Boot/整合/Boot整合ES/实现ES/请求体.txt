@@ -1,0 +1,68 @@
+
+
+          
+      			  添加属性 
+
+
+
+    请求路径: http://127.0.0.1:9200/任意名称    PUT请求,必须小写和唯一
+    请求体:
+
+                   {
+                        
+			"mappiongs": {
+			
+                       "properties": {
+
+
+        		        #属性
+  			       "id": {
+ 			    #数据类型:  关键字
+			       "type": "keyword"	
+				      },
+
+
+			        #属性
+                             "name": {
+
+			   #数据类型: 文本
+       			      "type":  "text"
+
+		    	      #分词器  
+		          "analyzer": "ik_max_word"										  	       
+				     },
+
+
+			    
+ 		         "descrtion":{
+			      "type": "text"
+			  "analyzer": "ik_max_word"
+		
+		   #其他属性参与查询
+			   "copy_to": "name"	
+				     }
+
+
+
+
+
+			     #参加分词
+			      "type":{
+			
+			         #哪些类型参加分词
+				"type":"keyword"										
+				     },				
+				
+
+
+
+				      }
+			  
+			 
+
+
+		   }
+
+
+        查看索引:   http://127.0.0.1:9200/任意名称    GET请求
+        删除索引:   http://127.0.0.1:9200/任意名称    DELETE请求

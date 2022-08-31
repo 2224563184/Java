@@ -1,0 +1,15 @@
+                        
+
+		视图控制器
+
+
+    浏览器只想请求图形化不想不做任何函数处理的情况下,可以使用视图控制器展示图形化效果
+
+
+		使用方法
+
+
+MVC拓展配置文件:
+ <mvc:view-controller path="请求路径" view-name="文件名"></mvc:view-controller>    
+  使用该标签后控制器所有函数会失效, 所以必须添加另一个标签
+<mvc:annotation-driven/>: 注解驱动

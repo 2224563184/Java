@@ -1,0 +1,23 @@
+
+
+
+1。导入vue文件
+2。导入路由文件
+3。导入组件文件
+
+import       Vue   from ‘vue'
+import       VueRouter   from ‘vue-router'
+import       comxxx   from ‘组件文件'
+
+1。创建 路由对象
+2。设置绑定
+new   VueRouter （{
+
+router：[
+
+{ path:'请求路径'，
+   Component：’组件名‘}
+]
+}）
+
+

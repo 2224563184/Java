@@ -1,0 +1,13 @@
+
+
+
+
+
+data: 		"数据对象",
+methods: 	"函数对象",
+computed: 	"计算属性",
+watch: 		"监视属性"
+props: 		"接收父类数据对象",
+propsData: 	"创建实例时手动传递props，方便测试props",
+directives:     "自定义指令"
+components:     "放入组件" 

@@ -1,0 +1,14 @@
+addPopupMenuListener  添加弹出菜单监听器
+addItemListener     添加项目监听器
+
+
+获取下拉选择框的选中条目
+       下拉选择框.addItemListener(new ItemListener() {
+           @Override
+           public void itemStateChanged(ItemEvent e) {
+//               获取下拉选择框选中的条目
+               Object selectedItem = bookSelct.getSelectedItem();
+//              必须将选中的条目转换成字符串
+                  selectedItem.toString();
+           }
+       });

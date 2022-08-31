@@ -1,0 +1,4 @@
+
+
+		MybatisSqlSessionFactoryBuilder 对象整合了 Mybatis
+         该对象和原来的SqlSessionFactoryBuilder建造者 使用方式一样

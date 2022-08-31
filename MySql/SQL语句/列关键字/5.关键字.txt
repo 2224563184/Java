@@ -1,0 +1,43 @@
+
+
+关键字:
+
+DISTINCT        过滤完全重复
+
+WHERE		过滤
+
+AND             逻辑与
+        
+OR  	        逻辑或;  查询的情况下, 按照追加查询来执行
+
+! 或 NOT        逻辑非
+
+ORDER BY        排序
+
+column_name     统计数目
+
+LIKE 模糊查询    %: 0个或者多个任意字符   _:1个任意字符   charlist: 只有1个  !charlist:1个除外
+
+IN              多个同列同值
+
+BETWEEN         数值在限制范围内
+
+AS              别名
+
+DISTINCT        过滤完全重复
+
+WHERE		过滤
+
+AND & OR  	与 或
+
+ORDER BY        排序
+
+TOP             显示指定数量;  例如:显示前5行,显示后5行
+
+GROUP BY :      分组
+
+HAVING 	:	分组筛选
+
+WHERE 	:       过滤
+
+

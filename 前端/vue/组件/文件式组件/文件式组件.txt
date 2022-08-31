@@ -1,0 +1,23 @@
+
+
+<templatey> 
+<div class="demo"> 
+<h2> 学 校 名 称 : {{fschoolName}}</h2> 
+<h2> 学 校 地 址 : {{faddress}}</h2> 
+<button @click="showName"> 点 我 提示 学 校 名 </buttony> 
+</div> 
+</templatey> 
+
+
+<script> 
+
+data(){},
+
+
+methods: {}， 
+
+
+   js暴露
+
+</script> 
+

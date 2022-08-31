@@ -1,0 +1,27 @@
+
+一、构造方法
+ 1.菜单栏
+        MenuBar()                            创建一个新的菜单栏。
+ 2.菜单组件
+        Menu()                               构造一个带有空标签的新菜单。
+        Menu(String label)                   构造具有指定标签的新菜单。
+        Menu(String label, boolean tearOff)  构造一个带有指定标签的新菜单，指示菜单是否可以撕掉。
+
+        PopupMenu                            构造一个矩形菜单组件       右键菜单
+ 3.菜单项
+        MenuItem()                           构造一个带有空标签且没有键盘快捷键的新MenuItem。
+        MenuItem(String label)               构造一个具有指定标签且没有键盘快捷键的新MenuItem。
+       MenuItem(String label, MenuShortcut s) 使用关联的键盘快捷方式创建菜单项
+
+
+
+
+
+
+
+
+小技巧:
+       1.如果想在菜单的菜单项添加分割线,只需要在Menu的add(new Menuitem("-"))
+       2.如果给菜单项添加快捷键,只需要在创建菜单项对象时设置
+        示范:  添加 ctrl + shift + Q快捷键
+        new MenuItem("菜单名称",new MenuShortcut(KeyEvent.VK Q,true))

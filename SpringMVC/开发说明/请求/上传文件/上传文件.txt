@@ -1,0 +1,17 @@
+0. 添加文件上传依赖:
+	 <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.4</version>
+        </dependency>
+
+1. MVC使用文件上传解析器:
+			 <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		         </bean>
+2. 在映射路径的函数中, 定义MultipartFile文件对象   对应的参数名, HttSession  session          
+3. 使用文件对象,返回文件名
+4. 使用会话对象,返回上下文对象. 返回绝对路径
+5. 如果绝对路径不存在就创建一个
+6. 文件对象.transferTo(绝对路径+文件名)
+
+

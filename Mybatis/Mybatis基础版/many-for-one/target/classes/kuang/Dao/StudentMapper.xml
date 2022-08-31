@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--
+     1.查询所有的学生
+     2.根据结果集的tim查询老师
+-->
+<mapper namespace="Levelcache1.Dao.StudentMapper">
+
+
+
+<resultMap id="StudentTeacher" type="Levelcache1.popj.Student" >
+ <result property="name" column="name"></result>
+ <result property="age" column="age"></result>
+ <result property="tid" column="tid"></result>
+
+                                                 <!--column这里是重点, 输入两个对象相同的属性名称     -->
+<association property="teacher" column="tid"
+             javaType="Levelcache1.popj.Teacher" select="getTeacher">
+</association>
+
+
+</resultMap>
+
+<select id="getStudent"   resultMap="StudentTeacher">select  * from student</select>
+<select id="getTeacher" resultType="Teacher">select * from teacher where tid=#{id}</select>
+                                                            <!--  这里是重点, 判断两个数值相同                    -->
+
+</mapper>

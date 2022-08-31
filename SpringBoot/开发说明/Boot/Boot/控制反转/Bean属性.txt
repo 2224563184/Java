@@ -1,0 +1,14 @@
+
+组合
+@ConfigurationProperties         设置配置文件的前缀; 支持配置文件宽松属性名
+                  prefix         前缀名, 必须小写
+@EnableConfigurationProperties   获取配置所有同名的属性值
+                  value          想获取属性值的实体类
+
+@Value                           获取指定名称的属性值
+
+				 
+org.springframework.core.env.Environment    配置文件封装到该对象
+
+
+ 

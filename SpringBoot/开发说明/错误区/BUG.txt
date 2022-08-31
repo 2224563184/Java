@@ -1,0 +1,15 @@
+
+  @Resource的问题
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 
+
+  yml格式
+org.yaml.snakeyaml.scanner.ScannerException: mapping values are not allowed here
+
+
+  配置文件不存在这个东西
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+
+
+  没有数据库名称
+com.baomidou.mybatisplus.core.toolkit.StringUtils.isNotBlank(Ljava/lang/CharSequence;)

@@ -1,0 +1,23 @@
+
+1. 编写两个SQL语句:
+   <select    id="标签名称"  >  SELECT * FROM user </select>
+   <select    id="标签名称"  >  SELECT * FROM test </select>
+
+2.  SQL语句更新返回泛型  
+   <select    id="xxx"  resultMap="user">  SELECT * FROM user </select>
+   <select    id="xxx"  resultMap="test">  SELECT * FROM test </select>
+   设置别名
+   <resultMap id="名称" type="数据类型">
+
+3. 设置关系                                                       
+   <     result  property="对象属性"  column="数据库列名称">  
+   <association  property="内置对象名称" javaType="数据类型" column="列名称" select="嵌套查询,需要提供SQL标签名称"  >           
+ 
+总结: 第1个SQL语句的结果集当作一张数据表, 然后再进行一次SQL语句过滤
+
+
+
+关系标签:<association>  对象   
+         <collection>   数据结构
+
+

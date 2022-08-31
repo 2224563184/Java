@@ -1,0 +1,9 @@
+
+                              数组工具类
+
+
+1.String  toString (int   arr[])                                          数组所有元素变成字符串
+2.int[]      copyOf  (int   arr[],int  length)                       复制数组,设置容量
+3.void    sort(int arr)                                                       数组排序
+4. void sort(double[] a, int fromIndex, int toIndex)   数组指定范围排序
+5.

@@ -1,0 +1,138 @@
+一、
+swing:
+       swing是100%纯java实现的,不再依赖本地平台的GUI,所以可以在所有平台上都保持相同的界面外观
+     独立平台的Swing组件被称为轻量级组件;依赖GUI平台的AWT被称为重量级组件,由于Swing组件全部采用java实现,图形界面显示的速度比
+     AWT显示慢一点,但这种微小的速度可以忽略
+
+swing的好处:
+
+     1.swing组件不依赖本地平台GUI,不会产生与平台相关的Bug
+     2.swing组件在任何平台上,外观界面可以保证不变
+
+swing的额外功能：
+      1.swing组件设置提示信息，使用seToolTipText()方法，为组件设置对用户有帮助的提示信息
+      2.swing组件除使用文字外，还可以用图标修饰自己；Imagelcon,该实现类代表一个图像图标
+      3.支持插拔式的外观风格;每个JComponent对象都有一个相应的ComponentUI对象,为它完成所有绘画、
+         事件处理、决定尺寸大小等工作. ComponentUI对象依赖当前使用的PLAF.使用UImanager.setLookAndFeel
+         ()方法可以改变图形界面的外观风格
+      4.支持设置边框;swing组件可以设置一个或者多个边框,swing中提供了各式各样的边框供用户使用,也能建立组合边框
+      或者自己设计边框;一种空白边框可以用于增大组件,同时协布局管理器对容器中的组件进行合理的布局
+
+          每个swing都有对应的UI类,将前J去掉然后在后面加入UI即可;UI代理类通常是抽象基类
+
+
+
+swing的使用:
+      大部分情况下,swing组件和AWT组件的用法一致,只需要在方法的开头加入J就能使用
+例外:
+       JComboBox:           对应AWT里的Choice组件,但是比它的功能更丰富             //下拉选择框
+       JFileChooset:        对应AWT里的FileDialog组件                          //
+       JScrollBar:          对应AWT里的Scrollbar组件;注意这两个组件的"b"区别       //滑动条组件
+       JCheckBox:           对应AWT里的CheckBox组件;        同上                //复选框
+       JRadioButtonMenuItem:对应AWT里的CheckboxMenultem组件;同上                //右键菜单项
+
+
+
+
+                                    SWING组件
+三、基类组件
+JButton              按钮
+JCanvas              用于绘图的画布
+JRadioButton         单选框组件                                 //新增方法
+JCheckBox            复选框组件
+ButtonGroup          将多个单选框组件合成一组按钮，该组只有一个被选中  //有变化
+JComboBox            下拉选择框                                 //有变化
+JFrame               窗口，在GUI程序里面通过该类创建窗口
+JLabel               标签类，用于放置提示性文本
+JList<>              列表框组件，可以添加多项条目                   建议使用String[] 比 String 方便 ; 如果想显示对象的指定的变量,需要对象加入toString方法返回指定变量
+JPanel               内置容器，但是必须要放置其他容器中
+JScrollPane(组件 )    滑动条
+JScrollBar           滑动条组件,如果需要用户输入指定范围的值,就可以使用滑动条组件.创建该组件的时候,必须指定它的方向、初始值
+                     滑块大小、最小值和最大值
+JTabbedPane          标签容器
+JScrollPane          可移动水平和垂直滚动条的容器
+JTextArea            多行文本域
+JTexField            单行文本框
+JLabel               展示内容并且不能修改,例如图片、文字
+static setResizable  固定组件大小
+
+颜色对话框:
+ColorChooser.showDialog
+
+文件对话框:
+JFileChooser("D:\\")                        构造一个默认打开路径
+int showOpenDialog(Component parent)        打开文件加载对话框,并且指定父类组件
+int showSaveDialog(Component parent)        打开文件保存对话框.并且指定父类组件
+void setSelectedFile(File file)             设置默认文件。
+void setSelectedFiles(File[] selectedFiles) 设置多个默认文件
+void setMultiSelectionEnabled(boolean b)    设置单选文件,如果为true则设置多选
+void setFileSelectionMode(int mode)         设置可以选择内容,例如文件、文件夹等，如果默认只能选择文件
+File getSelectedFile()                      获取用户选择的一个文件
+File[] getSelectedFiles()                   获取用户选择的多个文件
+
+
+
+四、边框组件
+Border类：
+static Border createBevelBorder(int type, Color highlight, Color shadow) 使用指定的高亮和阴影创建指定类型的斜角边框。
+static Border createBevelBorder(int type, Color highlightOuter, Color    创建指定类型的斜角边框，使用指定的颜色进行内部和外部高亮和阴影区域。
+               highlightInner, Color shadowOuter, Color shadowInner)
+static Border createLineBorder(Color color)                              创建具有指定颜色的线边框。
+static Border createLineBorder(Color color, int thickness)               创建具有指定颜色和宽度的线边框。
+static Border (Color color, int thickness, boolean rounded)              创建具有指定颜色，粗细和拐角形状的线条边框
+static Border createEmptyBorder()                                        创建一个不占用空间的空白边框。
+static Border createEmptyBorder(int top, int left, int bottom, int right)创建一个占用空间的空白边框，但没有绘制，指定顶部，左侧，底部和右侧的宽度。
+static Border createEtchedBorder()                                       使用组件的当前背景颜色创建具有“蚀刻”外观的边框，以突出显示和着色。
+static Border createEtchedBorder(int type)                               使用组件的当前背景颜色创建具有“蚀刻”外观的边框，以突出显示和着色。
+static Border createEtchedBorder(int type, Color highlight, Color shadow)使用指定的高亮和阴影颜色创建一个“蚀刻”外观的边框。
+static Border createEtchedBorder(Color highlight, Color shadow)          使用指定的高亮和阴影颜色创建一个“蚀刻”外观的边框
+TitledBorder(Border border)                                              使用其他边框和空标题的TitledBorder实例
+MatteBorder(int top, int left, int bottom, int right, Color matteColor)  创建具有指定插图和颜色的无光泽边框。
+
+
+
+
+
+五、工具条类
+JToolBar(String name, int orientation)               创建一个具有指定的 name和 orientation的新工具栏。
+JButton add(Action a)                                通过Action对象为工具条添加对应的工具按钮
+void addSeparator(Dimension size)                    向工具条添加指定大小的分隔符
+void setFloatable(boolean b)                         设置工具条是否可以被拖动
+void setMargin(Insets m)                             设置工具条与工具按钮的边距
+void setOrientation(int o)                           设置工具栏的方向。
+相当于把按钮放入一个组合,并且可以给按钮添加图标、重命名、给按钮添加点击监听
+
+
+
+
+六、 菜单类
+构造方法
+ 1.菜单栏
+        jMenuBar()                                      创建一个新的菜单栏。
+ 2.菜单组件
+        JMenu()                                         构造一个带有空标签的新菜单。
+        JMenu(String label)                             构造具有指定标签的新菜单。
+        Menu(String label, boolean tearOff)             构造一个带有指定标签的新菜单，指示菜单是否可以撕掉。
+ 3.右键菜单
+       JPopupMenu                                       构造一个矩形菜单组件
+    在SWING组件中, 菜单项需要加入到 buttonGroup Group 按钮组合中,然后再放入 右键菜单组件
+ 5.右键菜单项
+                                                         //有变化
+       JRadioButtonMenuItem()                            构造一个带有空标签且没有键盘快捷键的新JRadioButtonMenuItem。
+       JRadioButtonMenuItem(String label)                构造一个具有指定标签且没有键盘快捷键的新JRadioButtonMenuItem。
+       JRadioButtonMenuItem(String label,MenuShortcut s) 使用关联的键盘快捷方式创建菜单项
+
+
+
+小技巧:
+       1.如果想在菜单的菜单项添加分割线,只需要在Menu的add(new Menuitem("-"))
+       2.如果给菜单项添加快捷键,只需要在创建菜单项对象时设置
+         示范: 添加 ctrl + shift + Q快捷键
+        new MenuItem("菜单名称",new MenuSho
+
+
+
+
+静态、非静态都需要实例化对象
+非静态：可以直接使用静态方法、非静态方法
+静态：  可以直接使用静态方法，使用非静态方法需要实例化

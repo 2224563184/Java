@@ -1,0 +1,10 @@
+
+构造器:
+FileOutputStream(File file, boolean append):  默认不覆盖同名文件
+FileOutputStream(String file, boolean append)
+
+
+
+
+void write(byte[] b):                          输出全部数组
+void write(byte[] b, int 开始, int 结束)        输出部分数组

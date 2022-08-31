@@ -1,0 +1,44 @@
+
+	一.键盘
+
+onkeydown	          按下键盘
+
+onkeyup	script	          释放键盘
+
+onkeypress	          点击键盘
+
+
+
+	二.鼠标
+
+onclick		          鼠标点击
+
+ondblclick	          鼠标双击
+
+onmousedown	          按下鼠标
+
+onmousemove		  鼠标移动
+
+onmouseover	          鼠标指针移动到元素上
+
+onmouseout	          鼠标指针移出元素时
+
+ondrag	                  被拖动
+
+ondragend	          被拖动结束后
+
+ondragenter	          被拖动到有效拖放区域
+
+ondragleave	          离开有效拖放目标
+
+ondragover	          在有效拖放目标时
+
+ondragstart	          拖动时
+
+ondrop	               	  当被拖元素正在被拖放时运行的脚本。
+
+onmouseup		  在元素上释放鼠标按钮时触发
+
+onmousewheel		  鼠标滚轮正在被滚动时
+
+onscroll		  元素滚动条被滚动时

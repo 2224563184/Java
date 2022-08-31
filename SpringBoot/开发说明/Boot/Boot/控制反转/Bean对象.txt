@@ -1,0 +1,5 @@
+
+@Autowired 	 	返回同类Bean对象
+@Qualifier              	返回指定Bean对象
+
+警告： 该方法虽然简化了调用Bean的过程， 但是最终结果必须遵守控制反转

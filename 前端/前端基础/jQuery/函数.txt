@@ -1,0 +1,31 @@
+
+text(修改)              获取文本
+
+html(修改)              获取文本
+
+val(修改)               获取value属性
+
+css()                   修改样式
+
+each(fun(索引,循环参数)) 遍历
+
+size 或 length        	 数量
+
+addClass()               添加类名
+
+removeClass()            移除类名
+
+toggleClass()            类名存在就移除,不存在就添加
+
+hasClass()               是否存在类名
+
+find()                   传递一个参数，参数部分规定的选择器，查找范围是jQuery 对象的所有后代。
+
+next()                   下一个兄弟
+ 
+prev()                   前一个兄弟
+
+nextAll()                后面所有兄弟
+
+prevAll()                前面所有兄弟
+

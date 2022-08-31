@@ -1,0 +1,34 @@
+
+
+
+head          请求路径,默认get
+
+name          参数名(属性名)
+
+value         参数值(属性值)
+
+width         宽
+
+height        高
+
+style	      外观
+
+button	      按钮
+
+onclick       事件监听
+
+readonly      只读
+
+min           最小值
+max           最大值
+
+type          类型
+						类型值		             
+        
+                       text文本框           password密码框            radio单选框
+                   checkbox复选框	     reset重置按钮	   submit提交按钮
+                     button按钮框	      file上传文件	     hidden隐藏域
+		      range滑动块	       email邮箱框          url请求路径框
+      		     search搜索框              
+
+                     多选一         name="sex"	radio属性   name="sex"

@@ -1,0 +1,11 @@
+
+1. 变成过滤配置                   @WebFilter
+2. 变成过滤器                       Filter
+3. 重写过滤器函数      	   doFilter
+4. 放行通过	                        FilterChain.doFilter(request,  respnose)
+5. 注册过滤器
+
+
+@WebFilter：
+urlPatterns：    要拦截的路径
+filterName：     别名

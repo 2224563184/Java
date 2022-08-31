@@ -1,0 +1,30 @@
+
+	
+			兼容多个请求方式  
+
+  		put, delete, patch, get, post
+
+
+解决方案:
+
+
+	 <from action="请求路径"    method="post"  >
+
+	   <input type="hidden" name="_method" value="请求方式" >
+
+           <input type="submit" >
+      
+	</from>
+
+警告:  必须按照此格式, 否则无效  	           
+            
+
+
+配置文件:
+
+ mvc:
+    servlet:
+      path:
+    hiddenmethod:
+      filter:          
+        enabled: true

@@ -1,0 +1,18 @@
+
+json是一种文件格式, 它可以存放对象和数组
+txt是一种文件格式,  它可以存放文本
+
+服务器可以响应浏览器一个文件, 文件的格式可以是html/json/xml; 这里选择json是因为它的结构简单,方便解析
+
+使用json:
+         1.导入json依赖:
+    			 <dependency>
+   			 <groupId>com.fasterxml.jackson.core</groupId>
+    			 <artifactId>jackson-databind</artifactId>
+  			  <version>2.13.3</version>
+			 </dependency>
+         2.绑定路径的函数上使用@ResponseBody
+         3.retuen 对象或者数组
+
+
+         

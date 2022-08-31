@@ -1,0 +1,8 @@
+                               5种添加请求域的方式
+
+
+1.在映射函数中创建 Model对象, 使用addobject()设置名称和添加数值,然后使用setViewName()设置视图. 最后返回Model对象
+2.在映射函数的形参表中,定义Model对象和名称, 使用addAttribute()函数添加数值和视图
+3.在映射函数的形参表中,定义Map哈希表, 使用put()函数添加名称和数值
+4.在映射函数的形参表中,定义ModelMap对象和名称, 使用addAttribute()函数添加名称和数值
+5.在映射函数的形参表中,定义Request, 使用setAttribute()设置名称和数值  

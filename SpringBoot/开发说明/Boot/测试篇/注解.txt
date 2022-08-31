@@ -1,0 +1,19 @@
+
+@SpringBootTest           测试复合注解
+          class           绑定启动类
+     properties           临时属性              对象名.属性名=值
+           agrs           临时属性              --对象名.属性名=值
+scanBasePackageClasses    绑定启动类
+
+webEnvironment = SpringBootTest.WebEnvironment   设置虚拟WEB环境
+           MOCK           不启动
+   DEFINED_PORT           启动web环境, 指定端口
+    RANDOM_PORT           启动web环境, 随机端口
+
+@AutoConfigureMockMvc     开启虚拟WEB环境
+
+                     
+@Test                     测试类主函数
+
+@Import                   加载配置类
+

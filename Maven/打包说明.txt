@@ -1,0 +1,19 @@
+1. 必须有以下标签:
+
+  <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+
+2.打包之前,必须清理缓存             Cllean
+
+3.打包之前,必须关闭测试数据         iDEA跳过测试模式
+
+4.开始打包                          package
+
+5.dos执行该命令:                    java -jar

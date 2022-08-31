@@ -1,0 +1,12 @@
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: student        设置所有SQL语句前缀表名
+      id-type: auto                声明iD列是自增类型
+               assign_id           默认, 雪花算法类型
+               assign_uuid
+	       none
+	       input
+  configuration:                   配置   
+  log-impl:			   日志
+             org.apache.ibatis.logging.stdout.StdOutImpl     打印到控制台

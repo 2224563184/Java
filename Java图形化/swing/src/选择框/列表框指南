@@ -1,0 +1,21 @@
+
+
+使用过Mode的JList，无法使用JList类方法！！！！
+
+                          JList
+
+
+void setFixedCellHeight(int height)                       设置列表项的宽度
+void setFixedCellWidth(int width)                         设置列表项的高度
+void addSelectionInterval(int anchor, int lead)           在已经选中列表项的基础上,增加选中从 anchor 到 lead 索引范围内的所有列表选项
+void setLayoutOrientation(int layoutOrientation)          设置列表框的布局方向
+void setSelectedIndex(int index)                          设置默认选项
+void setSelectedIndices(int[] indices)                    设置默认多个选项
+void setSelectionBackground(Color selectionBackground)    设置列表项的背景颜色
+void setSelectionForeground(Color selectionForeground)    设置列表项的前景颜色
+void setSelectionInterval(int anchor, int lead)           设置从anchor 到 lead 所有列表项被选中
+void setSelectionMode(int selectionMode)                  设置列表的选择数量,默认没有限制           备用类ListSelectionModel
+void setVisibleRowCount(int visibleRowCount)              设置列表框的可视高度足以显示多少行列表项
+JList.VERTICAL                                            设置列表项纵向模式
+JList.VERTICAL_WRAP                                       设置列表项纵向换行
+JList.HORIZONTAL_WRAP                                     设置列表项横向换行

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="OperationAndMaintenance:war">
+    <output-path>$PROJECT_DIR$/实战/运维篇/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>OperationAndMaintenance</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="operationandmaintenance-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="OperationAndMaintenance:war exploded" />
+    </root>
+  </artifact>
+</component>

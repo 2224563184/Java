@@ -1,0 +1,8 @@
+				      
+                       返回值的前后缀是由视图解析器拼接的
+
+  
+return  "redirect:/文件名"      重定向
+return  "forward: /文件名"      转发
+return  "文件名"                  转发
+

@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>               声明
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">    页面表述
+ 
+    <title>Title</title>      页面标题
+
+</head>
+
+
+<body>
+
+<header>页面头部</header>
+<section>页面主体</section>
+<footer>页面脚部</footer>
+
+</body>
+
+</html>

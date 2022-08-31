@@ -1,0 +1,8 @@
+
+
+server:
+  servlet:
+    context-path: /uu                项目名
+    encoding:
+      charset: UTF-8                 字符编码
+  port: 8080                         端口

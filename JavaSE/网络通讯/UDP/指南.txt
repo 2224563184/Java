@@ -1,0 +1,37 @@
+UDP通信原理：
+  UDP协议是一种不可怕哦的网路协议，它在通信的两端各建立一个Socket对象，
+但是者两个Socket只是发送数据、接收数据的对象，因此对于基于DUP协议的
+通信双方而言，没有所谓的客户端和服务器的概念
+  Java提供了DatagramSocket类作为基于DUP协议的Socket
+
+
+一、UDP发送数据过程：
+         1.创建发送端的Socket对象(DatagramSocket )
+         DatagramSocket
+
+         2.创建数据，并把数据打包
+         DatagramPacket(byte[] buf, int offset, int length, InetAddress address, int port)
+
+         3.调用DatagramSocket对象的方法发送数据
+         void send(DatagramPacket p)
+
+         4.关闭发送端
+
+
+
+二、UDP接收数据过程：
+         1.创建接收端的Socket对象(DatagramSocket)
+           DatagramSocket(int port)
+
+         2.创建数据包
+           DatagramPacket(byte[] buf, int length)
+
+         3.调用DatagramSocket对象的方法接收数据
+           void receive(DatagramPacket p)
+
+         4.解析数据包
+           byte[] getData()
+           int getLength()
+
+         5.关闭接收端
+           void close();

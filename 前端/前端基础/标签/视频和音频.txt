@@ -1,0 +1,10 @@
+<video>          视频
+  src                   资源路径
+  controls              进度条
+  autoplay              自动播放
+
+
+
+<audio>          音频,同上
+ 
+      

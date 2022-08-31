@@ -1,0 +1,10 @@
+
+JTabbedPane(int tabPlacement, int tabLayoutPolicy) 使用指定的选项卡位置和选项卡布局策略
+
+
+void addTab(String title, Component component)                         添加标签和组件
+void addTab(String title, Icon icon, Component component)              添加标签、添加图标、添加组件
+void addTab(String title, Icon icon, Component component, String tip)  添加标签、添加图标、添加组件、添加提示
+void setEnabledAt(int index, boolean enabled)                          禁用指定选项卡
+void setSelectedIndex(int index)                                       默认指定选项卡
+void removeTabAt(int index)                                            删除选项卡 index 。

@@ -1,0 +1,25 @@
+
+
+1. MP默认开启雪花算法, 列名默认为id
+2. 使用其他名称的主键时, 给实体类属性添加   @TableId
+3. 如果属性名称和主键名称不一致时, 需要设置以下内容:
+
+   @TableId(value="主键名称",type= IdType.auto)
+
+     value: 默认属性同名
+      type: 索引策略
+
+      IdType枚举: IdType.auto    自增, 该列必须自增     
+                 IdTtpe.NONE     跟随全局
+	         IdType.INPUT    用户输入索引
+             IdType.ASSIGN_ID    雪花算法索引
+           IdType.ASSIGN_UUID    全球唯一索引
+
+
+
+
+
+
+  	  
+    
+      

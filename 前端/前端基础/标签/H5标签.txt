@@ -1,0 +1,66 @@
+
+             转义
+
+
+
+
+&lt;     &gt;         &nbsp; 空格
+
+
+<noscript> 是否不支持js
+
+
+
+<button>   按钮  
+
+
+<font>     文字
+  color  	       颜色
+  face             字体
+  size             大小
+
+
+<div>      占行
+<br>       换行
+<p>        段落
+
+
+<h1>       标题
+  align           对齐方式           left    center	right	justify
+
+
+
+<a>	      超链接页面跳转
+  href            请求路径;         #当前路径
+  target          位置             _self当前页面	_blank新建页面
+  download        下载
+
+
+
+
+
+<img>     图像
+src                文件路径
+title              悬停提示
+alt                未加载提示
+height             高度
+width              高度
+
+
+
+<label>   对焦
+for                关联标签           
+        
+
+
+<select>  下拉框
+
+
+
+<input>   输入数据
+ type     类型         text文本框    password密码框         radio单选框
+                  checkbox复选框	     reset重置按钮	   submit提交按钮
+                  button按钮框	    file上传文件框	     hidden隐藏域
+                   radio多选一         name="sex"	radio   name="sex"
+
+placeholder         提示

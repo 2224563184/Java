@@ -1,0 +1,28 @@
+	
+一. Post请求
+   axios({
+  method: 'post',
+  url: '/user/12345',
+  data: {
+    firstName: 'Fred',
+    lastName: 'Flintstone' } }); 
+
+
+// 获取远程图片
+  axios({
+  method:'get',
+    url:'http://bit.ly/2mTM3nY', responseType:'stream' }) .
+    then(function(response) { response.data.pipe(fs.createWriteStream('ada_lovelace.jpg')) }); 
+
+
+
+二. Get请求
+
+ axios('/user/12345'); //默认Get请求
+
+
+
+三. 请求配置
+   //请求路径
+   url: '/user',
+  

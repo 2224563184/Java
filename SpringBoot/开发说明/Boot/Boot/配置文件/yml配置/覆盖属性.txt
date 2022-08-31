@@ -1,0 +1,18 @@
+active:  使用其他文件的属性 或者 其他环境的属性覆盖默认属性值
+include: 多个
+spring:
+  profiles:
+    active:   applicaiton-A.yml
+    include:  applicaiton-B.yml, applicaiton-C.yml
+
+警告:      
+       编辑配置文件时一定要注意属性名称的唯一性, 否则会出现覆盖顺序
+       优先级: include属性从右往左,左边最高; active属性为最低   
+
+
+升级问题:
+            active  -> "active"
+            include -> "include"
+        
+        执行上面的升级操作后, "active"从左往右, 右边的优先级最高
+        "include"为次级

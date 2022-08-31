@@ -1,0 +1,6 @@
+
+
+query(connection, sql, new BeanListHandler<>(行对象.class), Obj...);   多行多列的表查询
+query(connection, sql, new BeanHandler<>(行对象.class), Obj...);       一行多列的表查询
+query(connection, sql, new ScalarHandler<>(), Obj...);                一行一列的表查询
+update()                                                              更新数据库的列

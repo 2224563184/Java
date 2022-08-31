@@ -1,0 +1,37 @@
+
+一.  使用Maven存在无法自动编译问题,  一定要在 pom.xml文件中存入以下内容:
+
+
+ 最好在每个 "pom.xml"都存入  !!!!
+
+
+<build>
+  <resources>
+    <resource>
+      <directory>src/main/java</directory>
+      <includes>
+        <include>**/*.xml</include>
+        <include>**/*.properties</include>
+      </includes>
+      <filtering>true</filtering>
+    </resource>
+    <resource>
+
+      <directory>src/main/resources</directory>
+      <includes>
+        <include>**/*.xml</include>
+        <include>**/*.properties</include>
+      </includes>
+      <filtering>true</filtering>
+    </resource>
+  </resources>
+</build>
+
+
+二.Mybatis需要手动提交事务,  和JDBC的操作相反
+
+三.Mapper配置的路径都是  "/" + "."
+
+四.SQL配置的路径全程用 "."
+
+五.每个不同的标签都有必须按照顺序使用

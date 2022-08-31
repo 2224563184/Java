@@ -1,0 +1,18 @@
+
+
+alert():                    警告框
+type():                     返回此数据的数据类型
+javascript:void(0);         发生事情,不做任何事情    保留当前页面
+window.confirm('确定删除?') 确认框
+confirm("确认删除?");       确认框
+document.location.href      请求路径函数
+document.location           同上
+window.location.href        同上
+window.location.            同上
+window.localStorage         本地存储, 浏览历史
+window.confirm  	    确认框
+console.log		    打印
+alert		    	    警告框
+setTimeout    		    定时器
+claerTimeout    	    清除定时器
+

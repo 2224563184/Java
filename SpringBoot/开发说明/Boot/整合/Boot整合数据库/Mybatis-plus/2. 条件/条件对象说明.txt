@@ -1,0 +1,21 @@
+
+
+
+
+            Wrapper条件对象
+
+
+
+
+子类:
+
+1. QueryWrapper:   	查询条件对象
+2. UpdateWrapper:  	删改条件对象
+3. lambdaQueryWrapper	lambda查询条件对象
+4. UpdateWrapper	lambda删改条件对象
+
+提示:   条件对象 等价 where
+
+
+
+        

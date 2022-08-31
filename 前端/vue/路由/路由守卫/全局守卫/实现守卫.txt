@@ -1,0 +1,13 @@
+
+路由对象.beforeEach( to, from, next ) =>{
+
+if (to.path=='xxx路径‘）{
+next()
+
+}else{
+
+next（）
+}
+
+
+}

@@ -1,0 +1,22 @@
+
+
+
+   引入依赖:<script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+   可以在国内的bootcdn搜索 "Axios"
+   警告: 编辑响应逻辑时, 一定要查看之前的 ajax文档
+
+
+
+
+
+               
+
+               
+1.设置请求前缀:             axios.default.baseURL
+2.使用请求函数:             axios.get() 或者 fetch()                      
+
+
+       
+
+             
+

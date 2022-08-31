@@ -1,0 +1,43 @@
+一、
+1.基类通用方法：
+setLocation(int x,int y)：                   设置组件的位置
+setSize(int width,int height):               设置组件的大小
+setBounds(int x,int y,int width,int height)：设置组件的位置、大小
+setVisible(Boolean b):                       设置该组件的可见性                是否显示
+setResizable
+
+二、Container容器体系
+1.Container容器体系中不能独立存在,必须依赖于Windows存在
+Frame类构造方法：                       //Windows对象
+Frame()                               构造最初不可见的新实例 Frame
+Frame(String title)                   构造一个新的，最初无形的 Frame具有指定标题的对象。
+
+
+
+2.Container根类通用方法:
+Component add(Component comp):         向容器中添加其他组件(该组件既可以是普通组件，也可以是容器并返回被添加的组件)
+Component getComponentAt(int x,int y); 返回指定点的组件
+int getComponentCount():               返回该容器内组件的数量
+Component[] getComponents():           返回该容器内的所有组件
+
+
+
+
+三、基类组件
+1.Button            按钮
+2.Canvas            用于绘图的画布
+3.Checkbox          复选框组件,也可以当单选框组件使用
+4.Checkbox Group    将多个Checkbox组件合成一组，一组Checkbox组件将将只有一个可以被选中   全部变成单选框组件
+5.Choice            下拉选择框
+6.Frame             窗口，在GUI程序里面通过该类创建窗口
+7.Label             标签类，用于放置提示性文本
+8.List              列表框组件，可以添加多项条目
+9.Panel             容器，但是必须要放置其他容器中
+10.Scrollbar        滑动条组件,如果需要用户输入指定范围的值,就可以使用滑动条组件.创建该组件的时候,必须指定它的方向、初始值
+                    滑块大小、最小值和最大值
+11.ScrollPane       带水平和垂直滚动条的容器
+12.TextArea         多行文本域
+13.TexField         单行文本框
+
+                    水平x == 长度
+                    垂直y == 高度

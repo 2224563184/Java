@@ -1,0 +1,16 @@
+
+        列的关键字
+
+列名	DEFAULT                 默认
+
+列名	NOT NULL                非空
+
+列名	UNIQUE                  唯一 
+
+列名	AUTO_INCREMENT          自增
+
+PRIMARY KEY(已有列)       	主键
+
+列名 类型 PRIMARY KEY           外键
+
+列名	COMMENT	        	注释

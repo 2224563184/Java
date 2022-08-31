@@ -1,0 +1,10 @@
+
+
+请求路径: http://127.0.0.1:8080/xxx/A;B;C;1;2;3;K=V             参数值
+          http://127.0.0.1:8080/xxx/key=value,value,value       1对多关系
+
+
+
+获取矩阵参数: 
+                xxx(@MatrixVariable("对应参数名")String  st)    获取矩阵参数
+		xxx(@MatrixVariable("对应key")List<?>  st)      获取1对多关系

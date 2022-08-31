@@ -1,0 +1,18 @@
+
+
+                            重点!!!
+     遍历环形链表 ,一定要先执行一次来移动指针, 否则直接  表头==表头
+
+
+     do {
+     System.out.println(l);
+     l=l.next;
+     }while (l!=an);
+
+
+     while (true){
+         System.out.println(l);
+          l=l.next;   更新指针
+           if (表头==当前指针){
+               break;
+           }

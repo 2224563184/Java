@@ -1,0 +1,2 @@
+int   availabie():             返回该文件的长度
+byte  read()                   读取文件

@@ -1,0 +1,18 @@
+一. 介绍
+                        Properties
+
+1.Properties是一个map集合
+2.可以导入文件中的 "键" "值"
+3."键"="值"都是String类型
+4.Properties文件格式: 键=值
+5.继承Hashtable集合,键不能重复
+
+
+二.常用方法
+
+1.String getProperty(String key)         根据"键" 返回 "值"
+2.list(PrintStream out)                  将此集合的所有元素,保存到配置文件
+3.load(InputStream inStream)             读取配置文件的 "键"和"值"
+4.load(Reader reader)                    读取配置文件的 "键"和"值"
+5.setProperty(String key, String value)  调用 Hashtable.put()
+6.store(outputStream outStream)          给配置文件添加注释

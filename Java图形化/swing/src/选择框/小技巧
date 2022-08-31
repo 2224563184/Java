@@ -1,0 +1,6 @@
+使用对象的指定变量：
+  在源对象中加入toString方法，返回指定的变量
+        public String toString() {
+                 return name;
+         }
+

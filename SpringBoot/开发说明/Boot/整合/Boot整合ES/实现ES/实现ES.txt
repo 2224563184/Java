@@ -1,0 +1,19 @@
+
+1.下载安装ES
+2.执行该文件: elasticsearch.bat
+3.下载ik分词器
+4.解压到该位置: ES根目录/plugins/
+5.导入依赖:
+
+	      <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.elasticsearch.client</groupId>
+            <artifactId>elasticsearch-rest-high-level-client</artifactId>
+        </dependency>
+
+
+6.编辑函数
+

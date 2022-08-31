@@ -1,0 +1,5 @@
+
+1. 使用@Restcontorller定义控制器
+2. 设置请求路径@RequestMapping 	        
+3. 测试启动类设置web环境  @SpringBootTest(value = "启动类.class",webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+4. 开启虚拟web环境 @AutoConfigureMockMvc

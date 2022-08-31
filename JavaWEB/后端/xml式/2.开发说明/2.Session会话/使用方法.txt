@@ -1,0 +1,14 @@
+
+请求对象.getSesstion(flase);   获取Sesstion对象,如果没有就返回Null
+
+请求对象.getSesstion();        获取Sesstion对象, 如果没有就创建一个
+
+Sesstion.setAttribute()        会话域保存数据,  类似于Map
+
+Sesstion.getAttribute();       获取指定参数的iD
+
+Sesstion.removeAttribute()     销毁指定Name的Sesstion
+
+Sesstion.invalidate()          销毁Sesstion
+
+getServletContext():           返回上下文对象

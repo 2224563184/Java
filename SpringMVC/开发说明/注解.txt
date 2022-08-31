@@ -1,0 +1,31 @@
+@Controller                   创建控制器注解
+
+@RequestMapping               获取所有请求; 如果此注解放在"类"头上,  那么html发送的请求路径: /项目/类请求/请求路径 , 默认:/项目/请求路径
+     value属性:               指定函数绑定请求路径, 可以绑定多个请求路径
+    method属性:               默认不区分请求方式                RequestMethod.Get/ RequestMethod.Post ----
+    params属性:               请求参数必须这样;                         name:必须有这个参数;    !name="123":请求参数必须没有这个参数值   
+        return:               响应方式:
+			      (1) "redirect:/相对路径"      重定向视图文件
+			      (2) "forward: /相对路径"      转发视图文件
+                              提示: 使用解析器以后并且直接返回参数的情况下,解析器会自动拼接前后缀,响应机制是转发.
+
+
+@GetMapping                   只接收Get方式的请求路径(阉割版)
+@PostMapping                  只接收Post方式的请求路径(阉割版)    
+
+@RequestParam:                绑定请求参数注解
+        value:                绑定参数名                                            
+
+@CookieValue:                 获取Sesion
+       value:                 绑定浏览器Session的name属性	
+
+@RequestHeader                获取所有请求头
+
+@RestController               复合注解, 它是给指定类添加@Controller控制器注解并且每个函数添加响应报文注解@ResponseBody
+                          
+@ResponseBody                 响应报文注解
+
+@Resource和@Autowired         bean的注入时使用 
+@Resource                     按照名称自动注入
+@Autowired                    按照类型自动注入
+                    

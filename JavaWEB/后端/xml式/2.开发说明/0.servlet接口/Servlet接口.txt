@@ -1,0 +1,25 @@
+
+
+                                    Servlet接口
+
+
+
+
+ Servlet接口函数:
+
+ init(ServletConfig config)                         初始化, 和静态代码块一样             
+ getServletConfig()                                 返回配置对象
+ service(ServletRequest req, ServletResponse res)   "html" 每次请求,都会执行
+ getServletInfo();                                                     向主机的Servlet运行者提供有关它本身的信息
+ destroy();                                         当Servlet全部退出去时，服务器调用这个方法
+
+
+
+
+
+说明:  Servlet是单例;线程不安全; 它的实现类是抽象的,需要通过继承抽象类并且重写方法来使用
+
+		
+
+
+

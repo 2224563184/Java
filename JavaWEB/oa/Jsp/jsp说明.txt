@@ -1,0 +1,21 @@
+
+    1.浏览器访问 index.jsp文件时,  jsp底层会自动翻译成 index_jsp.java,
+然后再编译成index_jsp.class也就是说index_jsp.class是一个类,
+服务器会通过打印流将jsp类输出到浏览器上
+
+
+    2.index_jsp类 继承Http-jspBase, 而Http-jspBase 继承HttpServlet. 所以index_jsp就是一个Servlet类
+      说白了它的本质就是一个类 ,一个java程序,然后套上一个壳改变一下叫法
+
+     3.jsp它是伪单例的, 而且生命周期和Servlet类一样只有服务器结束了才会消失
+
+     4.如果出现执行错误, 第一时间打开被Jsp翻译好的java文件进行检查
+jsp文件第一次访问和多次访问的区别:
+                                        第一次访问
+                                  1. jsp文件翻译成java文件
+                                  2. java文件编译成Class文件
+                                  3. 创建Servlet对象
+                                  4. 初始化init()函数
+                                  5. 调用Service()函数
+                                       第二次访问
+                                  1. 调用Service()函数

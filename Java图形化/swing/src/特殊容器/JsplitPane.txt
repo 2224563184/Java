@@ -1,0 +1,8 @@
+
+构造方法
+JSplitPane(int newOrientation)                                                          创建使用指定方向
+JSplitPane(int newOrientation, Component newLeftComponent, Component newRightComponent) 创建使用指定方向和指定组件
+类方法：
+void setContinuousLayout(boolean true)                                                   连续布局
+void setOneTouchExpandable(boolean newValue)                                             提供UI小部件以快速展开/折叠分隔符。
+int  getDividerSize()                                                                    返回分隔符的大小

@@ -1,0 +1,11 @@
+
+sendRedirect(String url)      	   重定向        /项目名+/请求路径
+
+getWriter()                	   获取打印流
+
+setContentType()                   响应内容的类型,如果设置错误浏览器无法解析文件     text/html;charset=UTF-8
+
+
+提示:
+      1.响应给浏览器的数据必须是String类型
+      2.标签中的属性赋值,必须要用 ''字符类型来赋值

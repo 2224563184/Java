@@ -1,0 +1,17 @@
+
+
+1. 添加MP依赖:
+	
+	<dependency>
+    <groupId>com.baomidou</groupId>
+    <artifactId>mybatis-plus-boot-starter</artifactId>
+    <version>3.5.2</version>
+	</dependency>
+
+
+2. 配置文件设置数据源
+
+3. 阅读接口文档
+
+
+             

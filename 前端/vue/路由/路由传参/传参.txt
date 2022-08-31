@@ -1,0 +1,70 @@
+ 				
+ 获取参数： this.router.param('name')
+
+
+
+
+
+				方式一 			 推荐
+
+   new    路由对象（{
+     
+        router：[
+                    {
+                     path:‘/请求路径’
+                    name：‘abc’                 路径对象
+
+
+                    Component: 绑定组件
+		}
+     
+		]
+}）
+
+this.$router.puhs(  name:路径对象， Param：{xxx:123} )           参数名
+this.$router.puhs(  name:路径对象， Param：{xxx:123} ，()=>{}，（error）=>{})       修正
+
+
+
+
+
+
+
+
+
+				方式三
+
+
+new   VueRouter （{
+
+router：[
+{ 
+   path:'请求路径:name'，        
+   Component：’组件名‘
+}
+]
+}）
+
+
+
+
+
+
+
+  			         方式二
+
+
+
+new   VueRouter （{
+
+router：[
+
+{ 
+   path:'/serlvet'，
+   props: {age：18}
+  
+
+ Component：绑定组件
+}
+]
+}）

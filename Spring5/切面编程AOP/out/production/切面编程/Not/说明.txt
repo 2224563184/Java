@@ -1,0 +1,8 @@
+AOP操作(准备)
+1. Spring框架一般都是基于Aspectj实现AOP操作
+(1)什么是AspectAspectj不是Spring组成部分,独立AOP框架,
+    一般把Aspect]和Spring框架一起使用,进行AOP操作*
+
+2、Aspectj实现AOP操作的方式:
+(1)基于xml配置文件实现
+(2)基于注解方式实现(使用)

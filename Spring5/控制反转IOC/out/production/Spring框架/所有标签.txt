@@ -1,0 +1,25 @@
+定义对象:
+<Bean iD= " "  Class="" scope=singleton" />        创建对象,默认单例对象
+
+
+别名对象
+<alias name=" 空格\""\'' " alias=""/>               支持多个别名,分隔符可以不同
+
+构造器:
+<constructor-arg>                                  默认使用无参构造器
+<constructor-arg NAME = ""  value=""或者ref="">     指定名称参数的构造器
+<constructor-arg index = "" value=""或者ref="">     指定索引参数的构造器
+<constructor-arg type = ""  value=""或者ref="">     不推荐,指定参数的构造器,不支持两个同类型
+
+属性:
+<property name="" value="" 或者 ref=""  >      需要属性提供set方法
+                                               value赋值基本类型 , ref引用地址
+</Bean>
+
+合并xml配置文件:
+<import resource="bean.xml"/>
+<import resource="a.xml"/>
+<import resource="b.xml"/>
+<import resource="c.xml"/>
+
+

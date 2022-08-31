@@ -1,0 +1,17 @@
+
+@ModelAttribute           表单映射实体类
+@RequestMapping           映射所有请求方法
+@GetMapping               映射Get请求
+@PostMapping              映射Get请求
+...
+@ExceptionHandler         捕获指定异常         
+@RestController           控制器,每个函数都添加了@ResponseBody        
+@PathVariable             路径变量
+@CrossOrigin              跨域
+@ReqeustBody              请求报文，发送Json
+@ResponseBody             响应报文，接收Json
+@Value                    获取, 可以使用EL表达式@ControllerAdvice
+
+
+
+

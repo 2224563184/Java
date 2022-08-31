@@ -1,0 +1,24 @@
+#默认使用头部环境
+
+#active属性:      调用其他环境, 覆盖当前属性
+#profiles属性:    环境名称
+
+server:
+  port: 8080
+
+
+# A环境
+--  
+spring:
+  profiles: A 
+  
+# B环境  
+---
+spring:
+  profiles: B
+  
+#  C环境
+---
+spring:
+  profiles: C
+

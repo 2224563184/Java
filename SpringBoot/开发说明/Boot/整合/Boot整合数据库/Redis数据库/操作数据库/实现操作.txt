@@ -1,0 +1,43 @@
+		
+		一.下载和安装
+
+
+1.下载安装Redis
+2.打开根目录的CMD
+3.输入以下命令:
+   redis-cli
+   exit
+   redis-cli
+   shutdown 
+   exit
+   redis-server.exe redis.windows.conf
+
+
+
+
+		二.使用Java操作数据库
+1.导入依赖
+
+2.编辑配置                   
+spring:
+  redis:
+    port:
+    host:
+    client-type:   选择类型:1.lettuce(默认)  2.jedis
+    username:
+    password: 
+
+
+3.选择操作对象     RedisTemplate(多种数据类型)        StringRedisTemplate(全字符串)
+
+4.该对象选择操作哪种数据结构: 
+		opsForValue()          双列表
+                opsForHash()	       哈希表 
+		opsForList()           数组
+
+5.操作对应的增删改查函数        
+	
+
+警告: 使用Dos添加数据,它的类型一定是String
+
+         

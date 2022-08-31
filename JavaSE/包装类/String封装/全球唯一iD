@@ -1,0 +1,2 @@
+ UUID.randomUUID()      返回全球唯一iD对象
+ UUID.toString()        转换String类型

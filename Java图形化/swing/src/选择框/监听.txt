@@ -1,0 +1,23 @@
+获取选择的条目:
+                选择框.addListSelectionListener(new ListSelectionListener() {
+                         @Override
+                     public void valueChanged (ListSelectionEvent e){
+                     }
+
+
+
+
+
+获取选择条目的集合
+  选择框.addListSelectionListener(new ListSelectionListener() {
+           @Override
+           public void valueChanged(ListSelectionEvent e) {
+//               获取列表框选定的值集合
+               List<String> selectedValuesList = booklist.getSelectedValuesList();
+//                遍历表框选定的值集合
+               for (String str : selectedValuesList) {
+//                   把遍历表框选定的值集合赋值给文本域
+
+               }
+           }
+       });

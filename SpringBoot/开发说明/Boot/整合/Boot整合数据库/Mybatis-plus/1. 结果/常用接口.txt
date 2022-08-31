@@ -1,0 +1,58 @@
+
+	         BaseMapperuser
+
+
+使用方法:自定义接口继承该接口, 该类主要用在Dao层
+  
+
+
+insert(T 实体类)       			增加                
+
+deleteById(Serializable  id)            删除iD列            
+
+deleteById(T 实体类)                    删除同名同值        
+
+deleteByMap(Map<列名,值>  Map)          删除                
+
+delete(Wrapper<T> 条件类)               删除条件            
+
+deleteBatchIds(collection 表)           删除多个iD列         
+
+updata(T  实体类, 条件类)               修改所有            
+
+updataById(T   实体类)                  根据iD修改所有  
+
+selectById(Serializable  id)            查询iD列             
+
+selectBatchIds(collection<T> 表)        查询多个iD列    
+      
+selectByMap(Map<列,值> Map )            条件查询               
+
+selectOne(Wrapper<T>  条件类)           条件查询一行             
+
+exists(Wrapper<T>  条件类)              查询是否存在         
+
+selectCount(Wrapper<T>  条件类)         统计数量             
+
+selectMaps(Wrapper<T>  条件类)          条件查询,返回键值对  
+
+selectObject(Wrapper<T>  条件类)        查询结果在第几行     
+
+selectPage(Wrapper<T>  条件类)          分页查询     
+
+selectMapsPage(Wrapper<T>  条件类)      分页查询
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

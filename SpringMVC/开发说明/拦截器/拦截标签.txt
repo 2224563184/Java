@@ -1,0 +1,15 @@
+<!-- 配置拦截器 -->
+<mvc:interceptors>
+      <!-- 拦截所有请求 -->
+    <bean class="interceptor.TestInterceptor" /> 
+
+      <!-- 拦截部分请求 -->
+    <mvc:interceptor>
+        <!-- 要拦截的请求路径 -->
+        <mvc:mapping path="/**" />
+        <!-- 不用拦截的请求路径 -->
+        <mvc:exclude-mapping path="" />
+     <bean class="拦截器" />
+    </mvc:interceptor>
+
+</mvc:interceptors>

@@ -1,0 +1,29 @@
+@TableLogic          逻辑删除, 该列修改为1,代表已删除
+
+@Mapper              注册映射器
+
+@MapperScan      注册多个映射器               
+
+@TabName          映射数据表
+
+@TableField         自动填充( 默认策略 )
+
+@TableId             映射主键列, 默认名iD
+
+
+   value:         列名, 默认和属性同名
+
+    type:         雪花索引生成策略
+
+	  
+     value: 默认属性同名
+      type: 索引生成策略
+
+                         IdType枚举
+
+                 IdTtpe.NONE     默认跟随全局配置, 全局默认iD为索引列
+                  IdType.auto    自增, 该列必须自增        
+	         IdType.INPUT    用户输入索引
+             IdType.ASSIGN_ID    雪花算法索引
+           IdType.ASSIGN_UUID    全球唯一索引
+

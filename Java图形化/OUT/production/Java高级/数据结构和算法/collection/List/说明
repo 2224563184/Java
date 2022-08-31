@@ -1,0 +1,15 @@
+
+
+
+p
+
+ public boolean add(E e) {
+
+        if (size == elementData.length)
+            elementData = grow();
+            elementData[s] = e;
+            size = s + 1;
+        }
+
+        return true;
+    }

@@ -1,0 +1,12 @@
+        
+mybatis-plus:
+  global-config:
+    db-config:
+
+
+
+#   索引生成策略:
+		1.默认iD列名为索引
+		2.默认雪花算法生成的索引值
+                 
+      id-type: assign_id      

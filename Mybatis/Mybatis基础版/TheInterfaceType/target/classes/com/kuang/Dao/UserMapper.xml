@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.Levelcache1.Dao.UserMapper">
+    <select id="getUserList" resultType="User">select * from users</select>
+    <select id="getUserByid" parameterType="int" resultType="com.Levelcache1.Dao.pojo.User">select *from users where id=#{id}</select>
+    <select id="addUser" parameterType="com.Levelcache1.Dao.pojo.User" resultType="com.Levelcache1.Dao.pojo.User">select *from users where id=#{id}</select>
+    <select id="deleteUser"     parameterType="int" resultType="int">select * from users where id=#{id}</select>
+    <select id="updateUser" parameterType="com.Levelcache1.Dao.pojo.User" resultType="int">select *from users where `id`=#{id}</select>
+</mapper> 

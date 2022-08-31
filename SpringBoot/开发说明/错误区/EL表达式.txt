@@ -1,0 +1,1 @@
+在Boot框架内, 使用 "@Value+EL表达式" 可以获取值, 但是只能在Web和Mybatis相关的文件中使用

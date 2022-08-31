@@ -1,0 +1,22 @@
+logging:
+  level:
+#打印级别
+   root: info
+
+#分组
+   ebank: warn
+
+# 设置打印规则  		%d: 日期, %m: 消息, %n: 换行, %p: 级别, %t:线程名称         
+  config: "%d -  %m%n"             
+
+#日志打印到文件内, 日志规模到指定大小时才会打印到文件内
+  file:
+    name: server.log
+
+#设置日志文件
+  logback:
+    rollingpolicy:
+#设置大小         
+      max-file-size: 100MB
+#设置文件名规则
+       file-name-pattern: server.%d{yyyy-MM-dd}.%i.log

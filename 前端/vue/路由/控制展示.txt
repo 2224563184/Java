@@ -1,0 +1,32 @@
+1.路由配置：
+          【
+                new  路由对象({
+                 router:[
+                       {
+
+                         path:/abc，
+ 		    meta：{开关：true }       设置abc路径的开关
+
+
+                         component: 绑定组件          
+                      }
+                            
+		]
+	})
+】
+
+
+
+2.调用组件
+	 【
+            <temlate>
+
+               <router-view>跳转页面<router-view>
+
+//             要不要显示页面，全看开关属性
+                <组件名   v-shou=' $router.mate.属性名'    >
+	 </temlate>  
+】
+	
+
+  

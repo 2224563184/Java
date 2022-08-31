@@ -1,0 +1,8 @@
+
+							支持通配符！！！
+
+
+package org.springframework.util.AntPathMatcherx1
+
+
+match( "/Path/*",  “/Path/Hander” ) ：          通配符，  B路径在A路径的范围内

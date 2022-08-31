@@ -1,0 +1,45 @@
+
+
+
+                      事务特性
+
+1.原子性:  全部完成或者全部失败
+2.一致性:  执行前或者执行后,总量是一致的
+3.持久性:  提交事务后,数据表会直接更新
+4.隔离性:  各自的操作互相不影响
+
+
+                     事务
+
+java提供了事务管理器接口 "PlatformTransactionManager", 每一个平台想使用事务需要使用对应的类
+Spring自带的事务管理类: org.springframework.jdbc.datasource.DataSourceTransactionManager
+
+                   实际使用
+
+一.创建事务对象
+1.编程式:         直接在源码加入事务,很不方便     不推荐
+2.声明式:         使用xml或者注解              推荐
+  xml声明式
+(1)创建一个xml文件
+(2)创建数据源bean对象
+(3)创建事务bean对象               DataSourceTransactionManager
+(4)事务对象注入数据源对象
+
+二.设置哪个方法使用事务
+1设置事务名和哪些方法使用事务
+(1)
+    <tx:advice id="事务名" >
+      <tx:attributes>
+       <tx:method name="开启事务的方法"  propagation="REQUIRES_NEW" isolation="SERIALIZABLE"/>
+      </tx:attributes>
+  </tx:advice>
+(2)设置参数:
+①propagation事务传播行为:  ① Propagation.REQUIRED   ② Propagation.REQUIRED_NEW
+②ioslation事务隔离级别:    ① READ UNCOMMITTED       ② READ COMMITTED     ③ REPEATABLE READ    ④ SERIALIZABLE
+③timeout超时回滚:        默认关闭
+④readOnly是否只读 :      默认查询
+⑤rollbackFor异常回滚  :  默认
+⑥norollbackFor异常不回滚:
+
+2设置开启事务的方法所在位置           <aop:config>  <aop:pointcut id="方法名" expression="execution(路径)"/>    </aop:config>
+

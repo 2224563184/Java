@@ -1,0 +1,7 @@
+  @Max             限制最大值
+  value            具体值
+message            报错内容
+
+ @Min              取反
+
+

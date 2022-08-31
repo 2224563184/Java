@@ -1,0 +1,7 @@
+
+一.
+
+1. 定义MVC配置类
+2. 创建拦截器
+3. 添加拦截 "PaginationInnerInterceptor插件对象"
+4. 执行对应操作

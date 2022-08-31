@@ -1,0 +1,17 @@
+     
+ 
+  
+                会话实现原理
+
+
+    web服务器中有一个Session列表, 类似于Map集合
+它的key保存SesstionID,  它的value保存Sesstion对象
+
+浏览器第一次发送请求:    创建一个Sesstion对象并且生成对应的SesstionID保存到Sesstion列表中
+		     然后自动将SesstionID发送到浏览器的缓存中
+
+浏览器第二次发送请求:     浏览器把缓存中的SesstionID自动发送给Web服务器, 然后服务器根据SesstionID
+                     从列表中获取Sesstion对象
+
+    SesstionID以 Cookies	的方式保存在浏览器内存中, 当浏览器被关闭以后它的内存数据也跟随消失了
+	

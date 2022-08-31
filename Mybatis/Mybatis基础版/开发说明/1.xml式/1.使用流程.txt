@@ -1,0 +1,65 @@
+
+
+1.使用Maven添加Mybatis依赖
+2.在pom文件中, <build>标签引用资源文件
+3.在 "核心配置" 文件中,设置数据源运行环境
+4.在 "SQL配置"  文件中, 创建SQL语句
+7.在主函数中, 使用文件流读取核心 "配置文件"
+8.创建SqlSessionFactory工厂
+9.取出SqlSession的对象
+10.执行查询
+11.关闭SqlSession对象
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+① <build>
+        <resources>
+            <!--  Java包的配置文件 -->
+          <resource>
+              <directory>src/main/java</directory>
+              <includes>
+                  <include>**/*.xml</include>
+                  <include>**/*.properties</include>
+              </includes>
+          </resource>
+
+    </build>
+
+
+
+
+
+
+
+②<build>
+            <!--  资源包的配置文件 -->
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.properties</include>
+                </includes>
+            </resource>
+        </resources>
+
+</build>
+
+

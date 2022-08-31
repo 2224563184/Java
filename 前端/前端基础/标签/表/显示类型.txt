@@ -1,0 +1,20 @@
+
+
+<ul>	   无序列表
+  type                符号类型  	  disc小圆	   square小正方	   circle空心圆
+<li>       行
+
+
+
+<ol>	   有序列表
+
+
+
+
+<table>    表格
+ border              设置间隔
+<tr>       行
+  align              对齐规则
+<th>       表头
+<td>	   列
+ align               对齐规则    colspan设置跨列     rowspan设置跨行

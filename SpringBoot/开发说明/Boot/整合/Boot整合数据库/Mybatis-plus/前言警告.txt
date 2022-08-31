@@ -1,0 +1,25 @@
+
+             
+
+  
+     1. 实体类必须映射 "数据表" ，默认类名         	                             @TableName("数据表")
+     2. 数据表接口必须添加映射器    	                                                 @MapperScan( basePackages="com.Data" )  或者BaseMapper添加 @Mapper
+     3. 数据库的 "URL" 必须放在父级数据源, 否则绝对报错
+     4. 使用MP框架必须要设置主键, 默认列名 "iD" ;                                  @TableID("字段")
+     5. 实体类的 "id"属性， 它的数据类型必须是 “Long”或“String"
+     6. 实体类属性的数据类型必须是包装类，否则会将数据改成默认值
+     7. 数据库字段要避免关键字
+     8. 使用@MapperScan 注册的映射器， 文件包必须精准路径
+
+
+示范:
+
+ datasource:
+
+  url: jdbc:mysql://localhost:3306/reggie
+
+# 连接池          
+  hikari:
+   password:
+   username:
+   driver-class-name:

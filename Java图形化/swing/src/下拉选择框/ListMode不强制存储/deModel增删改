@@ -1,0 +1,16 @@
+
+
+
+DefaultListModel()
+
+void add(int index, E element)             将指定元素插入此列表中的指定位置。
+void insertElementAt(E element, int index) 将指定元素插入此列表中的指定位置。
+void addElement(E element)                 将指定的组件添加到此列表的末尾
+E remove(int index)                        删除此列表中指定位置的元素
+void removeElementAt(int index)            删除指定索引处的元素
+void removeAllElements()                   从此列表中删除所有元素并将其大小设置为零。
+boolean removeElement(Object obj)          从此列表中删除参数的第一个（索引最低）事件。
+void removeRange(int fromIndex, int toIndex)删除指定索引范围内的组件。
+E set(int index, E element)                将的元素替换此列表中指定位置的元素。
+void setElementAt(E element, int index)    将的元素替换此列表中指定位置的元素。
+boolean contains(Object elem)              测试指定的对象是否是此列表中的组件      测试重复元素

@@ -1,0 +1,13 @@
+标签		作用		示例
+
+@{}             项目名          /xxx/路径
+th:href		替换请求	th:href="@{/index.html}"
+th:text		替换文本	th:text="${title}"
+th:value	替换值		th:value="${user.name}"
+th:each		迭代		th:each="stu:${user}"
+th:src		替换资源	th:src="@{/img/Wechat.jpg}"
+th:if		条件判断	th:if="${isVip}"
+th:switch th:case  条件判断	th:switch="${sex}" th:case="'man'"
+th:insert	插入		th:insert="footer :: copy"
+th:replace	替换		th:replace="footer :: copy"
+th:fragment	定义片段	th:fragment="frag (onevar,twovar)"

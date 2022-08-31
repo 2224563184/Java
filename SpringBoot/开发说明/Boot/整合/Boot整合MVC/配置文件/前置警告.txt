@@ -1,0 +1,6 @@
+
+
+
+	必须要在启动类添加该注解: @SpringBootApplication(scanBasePackages = {"控制器包"})
+  扫描对应的控制器, 否则404报错
+

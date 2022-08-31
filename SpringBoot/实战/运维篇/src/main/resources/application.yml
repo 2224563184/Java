@@ -1,0 +1,36 @@
+
+logging:
+  level:
+    root: off
+#
+#server:
+#  port: 8080
+#logging:
+#  level: info
+#   ebank: warn
+#  file:
+#    name: server.log
+#  logback:
+#    rollingpolicy:
+#      max-file-size:
+#      file-name-pattern: server.%d{yyyy-MM-dd}.%i.log
+#
+#---
+## B环境
+#
+#---
+#spring:
+#  profiles: B
+#
+##  C环境
+#---
+#spring:
+#  profiles: C
+#
+#
+spring:
+  devtools:
+    restart:
+      exclude:  static/**
+      enabled: off
+

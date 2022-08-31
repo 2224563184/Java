@@ -1,0 +1,7 @@
+
+
+        String sql="select * from dept where deptno= ?"; 占位符
+
+        PreparedStatement=  connection.prepareStatement(sql);
+
+	PreparedStatement.set(1,100);  填充占位符,从1开始

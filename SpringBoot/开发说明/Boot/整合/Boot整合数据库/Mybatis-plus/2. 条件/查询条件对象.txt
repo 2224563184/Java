@@ -1,0 +1,59 @@
+eq（boolean fig,  "列"，值 ）        是否条件查询
+					    是：条件查询	
+					    否：查询全部
+
+
+
+xxx().xxx(是否拼接, xxx)             	    拼接条件             
+		
+select(String... 列名)  		    显示指定结果; 属性名和列名必须一致
+
+inSql(列,SQL语句)       		    子查询
+
+eq() 					    等于　　	 			=
+
+allEq()         			             同上             			=
+
+ne() 　　 				    不等于 	       　		<>
+
+gt()     				    大于 　　	 			>
+
+lt()	   　　 			    小于 　　	 			<
+
+lt()					    满足条件后(true),组装SQL语句
+
+ge()	   　　 			    大于或等于　　 	 		 >=
+		
+le()	   　　				    小于或等于 			         <=
+						
+or() 　	     　 			    或者 　　				 or
+
+and()　 	      　		    并且 　	      　		 and
+
+like() 	    　　  			    模糊查询包含s 　			 like %s%
+
+notLike()	  			    模糊排除不包含s  		 	 not like %s%
+
+likeLeft() 　　	  			    左匹配模糊查询　　 			 like %s
+	
+likeRight()  　 　			    右匹配模糊查询 　  			 like s%
+
+between() 　    　			    在该范围内　       			 between A  AND   C
+
+notBetween()  　  			    同上取反　　        		 NOT  between A  AND   C
+ 
+isNull() 　     　			    是否为空　　        		 is null
+
+isNotNull()  　　			    是否不为空　　			 is not null
+	
+in()         　　			    参数在[a, b, c]之中　　 	 	 field in (a, b, c)
+
+notIn() 　     				  　参数不在在[a, b, c]之中 	 	 field not in (a, b, c)
+
+orderByAsc() 　　			    升序排序　　			 order by field asc
+
+orderByDesc()  　			    降序排序 　　			 order by field desc
+	
+groupBy()  　　  			    分组 		     　　	 group by
+
+having()  　   　			    分组过滤   	     　　		 having

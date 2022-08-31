@@ -1,0 +1,22 @@
+			服务器添加请求域    
+
+
+1.在映射函数的形参列表中,定义 Model或者Map对象       xxx(Model); xxx(Map map)
+2.调用add()函数,给改对象添加数据
+
+
+
+			服务器获取请求域
+
+1.xxx(  @RequestaddAttribute("Key") String st  )
+2.xxx(Map map)
+
+
+
+		        浏览器获取请求域
+
+获取请求域数据:
+
+1.导入thymeleaf命名空间
+2.使用EL表达式获取数据: ${Key}
+               

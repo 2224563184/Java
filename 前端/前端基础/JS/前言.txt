@@ -1,0 +1,23 @@
+
+                             js使用说明
+
+1.在<head>标签的作用域中,定义js语言
+2.示范:
+<head>
+<script type="text/javascript">
+</script>
+</head>
+
+
+
+                       JavaScript特殊的值
+
+undefinednullNAN            未定义,所有js变量未赋于初始值的时候,默认值都是undefined.
+NAN                         全称Not a Number。非数字。非数值。
+
+
+
+                        Js中的定义变量格式
+
+1. var  变量名;
+2. var  变量名 = 值;

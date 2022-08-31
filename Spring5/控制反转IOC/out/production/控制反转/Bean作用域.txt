@@ -1,0 +1,11 @@
+
+
+<Bean iD= " "  Class=""  />:
+
+scope="prototype"              每次getBean多例对象
+
+autowire="byName"               setA() 自动装配 bean名称相同的对象
+例如:    user A =new user();   set A(user a);
+
+autowire="byType"              setC()自动装配 bean中同类的对象
+例如:    user C =new user();    set A(user a);

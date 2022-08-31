@@ -1,0 +1,21 @@
+
+介绍：    设置动态的默认值，没必要做重复的操作
+
+1. 实体类属性添加该注解		@TableField
+2. 定义默认值类
+3. 实现元对象接口 (填充接口）     MetaObjectHandler
+4. 重写对应的填充函数
+5. 编写具体逻辑：			metaObject.setValue( “列”，值 )
+6. 注册该类为Bean
+
+
+
+
+@TableField
+     1.fill：				生成策略   
+        FieldFill.DEFAULT		默认不生成
+        FieldFill.INSERT		插入时调用填充
+        FieldFill.UPDATE		更新时调用填充
+        INSERT_UPDATE	           插入和更新时调用填充		
+   		
+    2.condition			条件语句

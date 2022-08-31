@@ -1,0 +1,20 @@
+
+HttpServlet实现类:
+
+ init(ServletConfig config)                         初始化, 和静态代码块一样      
+       
+ getServletConfig()                                 返回HttpServlet对象
+
+ service(ServletRequest req, ServletResponse res)   "html" 每次请求,都会执行
+
+ getServletInfo();                                  向主机的Servlet运行者提供有关它本身的信息
+
+ destroy();                                         当Servlet全部退出去时，服务器调用这个方法
+
+doGet(HttpServletRequest req, HttpServletResponse resp)      如果是get请求方式,执行此函数  
+
+doPost(HttpServletRequest req, HttpServletResponse resp)     如果是post请求方式,执行此函数
+
+
+提示: service()和doGet()或者doPost(),如果2个请求函数同时存在那么只会调用service()函数
+                                                               

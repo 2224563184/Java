@@ -1,0 +1,12 @@
+th:href="@{}"           /项目名称
+th:id 			替换id
+th:text			文本替换
+th:utext		支持html的文本替换
+th:object		替换对象
+th:value		属性赋值
+th:with			变量赋值运算
+th:style                设置样式
+th:onclick		点击事件
+th:each			属性赋值
+th:if			判断条件
+th:unless		if判断相反

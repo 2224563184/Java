@@ -1,0 +1,2 @@
+getMapper(接口.class):  绑定接口
+getList(String iD):     使用指定SQL语句,返回一个结果集

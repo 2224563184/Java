@@ -1,0 +1,4 @@
+1.HashTable不允许键或值为null；
+2.HashTable长度默认值11,HashTable扩容将创建一个原长度2倍的数组，再使用头插法将链表进行反序；
+3.HashTable的hash算法首先使得hash值小于整型数最大值，再通过取模进行散射运算；
+4.HashTable一直都是数组+链表

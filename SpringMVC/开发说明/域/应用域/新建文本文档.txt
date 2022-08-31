@@ -1,0 +1,6 @@
+			application应用域
+
+
+1.在映射函数的形参列表中,定义HttpSession  对象
+2.使用函数获取应用对象: session.getServletContexe();
+3.使用setAttribute(Stirng Key,  Object  Value)函数添加到应用域中

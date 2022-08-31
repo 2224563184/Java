@@ -1,0 +1,16 @@
+一. 定义拦截类
+    1. 任意类实现拦截器接口:  HandlerInterceptor
+    2. 设置拦截逻辑:
+                    preHandle():  在请求之前进行拦截, 返回true就放行通过
+	            postHandle():  
+	            afterCompletion():
+   
+二. 注册拦截器 
+    1.定义配置类                 @Configtion
+    2.实现该接口,定义为MVC容器  "WebMvcConfigurer"
+
+    3.重写该函数,编辑拦截器          addInterceptors();
+    4.添加拦截对象             		 registry.addInterceptor();
+    5.添加被拦截的请求路径          上面的返回对象. addPathPatterns(拦截路径)
+    6.排除拦截              	          上面的返回对象. excludePathPatterns(排除路径)
+    7.拦截顺序         		          上面的返回对象.interceptorRegistration.order()   

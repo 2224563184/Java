@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="druid.properties"></properties>
+
+    <environments default="druid">
+        <environment id="druid">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+                <property name="driver" value="${driver}"/>
+            </dataSource>
+        </environment>
+    </environments>
+   <mappers>
+       <mapper resource="com/demo/sql.xml"></mapper>
+   </mappers>
+</configuration>

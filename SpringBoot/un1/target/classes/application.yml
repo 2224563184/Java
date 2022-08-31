@@ -1,0 +1,20 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 000000
+  activemq:
+    broker-url: jdbc:mysql://127.0.0.1:3306/bjpowernode?useUnicode=true&characterEncoding=utf-8&useSSL=false
+
+server:
+  servlet:
+    context-path: /uu
+    encoding:
+      charset: UTF-8
+  port: 8080
+
+chineuu:
+  userid: aaaa
+  age: 4444
+

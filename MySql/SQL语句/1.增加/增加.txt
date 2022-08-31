@@ -1,0 +1,13 @@
+CREATE TABLE 表名称                                  增加表
+CREATE TABLE 表名称(列 类型)                         增加表, 顺手增加列 
+INSERT INTO  表名称 (列名) VALUES(数值)              增加行
+ALTER TABLE  表名称                                  增加列
+
+
+
+
+
+
+
+
+CREATE DATABASE IF NOT EXISTS RUNOOB DEFAULT CHARSET utf8[字符集] COLLATE utf8_general_ci[大小规则];  增加库

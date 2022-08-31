@@ -1,0 +1,9 @@
+USE      库名                                                               切库
+
+ALTER    TABLE  原来的数据表名，RENAME TO + 新数据表名                      修改表名      
+                
+ALTER    TABLE  表名    MODIFY  列名	类型			            修改列类型	
+		
+ALTER    TABLE 表名    COLUMN 原名  新名  VARCHAR(30)                       修改列名和类型    
+         
+UPDATE   表名  SET 列=数值                            			    修改行

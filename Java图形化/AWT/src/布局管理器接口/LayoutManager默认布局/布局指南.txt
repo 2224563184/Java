@@ -1,0 +1,6 @@
+LayoutManager:
+               FlowLayout布局管理器中,组件像水一样像某反向排序,遇到边界就折回,重头开始
+             排序.在默认的情况下,从左向右排序所有的组件
+1.FlowLayout:                             使用默认的对其方方式及默认的垂直间距、水平间距创建FlowLayout布局管理器
+2.FlowLayout(int align):                  使用指定的对齐方式和默认的垂直间距、水平间距
+3.FlowLayout(int align,int hgap,int vgap):使用指定的对齐方式和指定的垂直间距、水平间距

@@ -1,0 +1,5 @@
+
+
+1.public String getMessage()        放回此throwable的详细消息字符串
+2.public String toString            返回此可抛出的简短描述
+3.public void printStackTrace()     把异常的错误信息输出在控制台

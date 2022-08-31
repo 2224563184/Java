@@ -1,0 +1,4 @@
+spring:
+  profiles:
+#标签名一致即可
+    active: @profile.active@

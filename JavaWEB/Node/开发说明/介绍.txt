@@ -1,0 +1,15 @@
+
+
+ 		Node
+
+  Node框架, 用于解析js文件
+
+
+使用方法:
+
+          1.创建Node工程
+          2.终端输入该命令:    npm init  --yes
+          3.继续输入命令:      npm install express
+          4.定义js文件
+          5.在终端打开上面的js文件,并且输入该命令:  node   文件名                        
+       

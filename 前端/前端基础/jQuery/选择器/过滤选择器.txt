@@ -1,0 +1,4 @@
+
+   li:first          该类型第一个
+   li:last           该类型最后一个
+   li:not(.clas)     排除该类型

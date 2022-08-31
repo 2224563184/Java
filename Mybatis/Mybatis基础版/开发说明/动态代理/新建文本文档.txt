@@ -1,0 +1,25 @@
+
+一.动态代理存在的意义:在三层架构中,业务逻辑层要通过接口访问数据访问层的功能,动态代理可以实现.
+
+二.动态代理的实现规范:
+1) UsersMapper.xml文件与UsersMapper.java的接口必须同一个目录下.
+2) UsersMapper.xml文件与UsersMapper.java的接口的文件名必须一致,后缀不管.
+3) UserMapper.xml文件中标签的id值与与UserMapper.java的接口中方法的名称完全一致.
+4) UserMapper.xml文件中标签的parameterType属性值与与UserMapper.java的接口中方法的参数类型完全一致.
+5) UserMapper.xml文件中标签的resultType值与与UserMapper.java的接口中方法的返回值类型完全一致.
+6) UserMapper.xml文件中namespace属性必须是接口的完全限定名称com.bjpowernode.mapper.UsersMapper
+7)在SqlMapConfig.xml文件中注册mapper文件时,使用class=接口的完全限定名称com.bjpowernode.mapper.UsersMapper
+
+
+
+三,动态代理访问的步骤:
+1)建表Users
+2)新建maven工程,刷新可视化
+3)修改目录
+4)修改pom.xml文件,添加依赖
+5)添加jdbc.propertis文件到resources目录下
+6)添加SqlMapconfig.xml文件
+7)添加实体类
+8)添加mapper文件夹,新建UsersMapper接口
+9)在mapper文件夹下,新建UsersMapper.xml文件,完成增删改查功能
+10)添加测试类,测试功能

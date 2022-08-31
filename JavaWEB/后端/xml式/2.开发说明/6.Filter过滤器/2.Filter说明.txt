@@ -1,0 +1,11 @@
+
+
+
+
+		Filter过滤器接口
+	
+1.doFilter (ServletRequest, ServletResponse, FilterChain)  每收到一次请求, 都会执行此方法
+2.init(FilterConfig filterConfig)                          初始化, 等价静态代码块
+3.destroy()                                                在销毁过滤器对象之前,调用该方法来释放资源
+
+

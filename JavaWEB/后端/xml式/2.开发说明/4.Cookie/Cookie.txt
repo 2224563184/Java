@@ -1,0 +1,54 @@
+
+
+void setMaxAge(int expiry)	设置该Cookie的存活时间（秒）;  不设置时间Cookiet保存浏览器内存中, 设置时间临时保存在磁盘中
+                                                              -1等价于不设置
+
+int getMaxAge()			获取此Cookie的存活时间（秒）
+
+
+String getName()		返回Cookie的Name
+
+
+字符串getDomain()		获取此Cookie的域名。
+
+
+void setPath(String uri)	为cookie指定一个路径，客户端应将cookie返回到该路径。
+
+
+String getPath()		返回浏览器返回该cookie的服务器上的路径。
+
+
+boolean getSecure()		如果浏览器只通过安全协议发送cookie，则返回true；如果浏览器可以使用任何协议发送cookie，则返回false。
+
+
+String getValue()		获取该Cookie的当前值。
+
+
+int getVersion()		返回此Cookie所符合的协议版本。
+
+
+boolean isHttpOnly()		检查此Cookie是否被标记为HttpOnly。
+
+
+void setComment(String purpose)		指定一个描述Cookie目的的注释。
+
+
+void setDomain(String domain)		指定该cookie应在哪个域内呈现。
+
+
+void setHttpOnly(boolean isHttpOnly)	标记或取消标记此Cookie为HttpOnly。
+
+
+void setSecure(boolean flag)		向浏览器表明该cookie是否只应使用安全协议发送，如HTTPS或SSL。
+
+
+void setValue(String newValue)		为这个Cookie指定一个新的值。
+
+
+void setVersion(int v)			设置此Cookie符合的Cookie协议的版本。
+
+
+对象   clone()				重写标准的java.lang.Object.clone方法，返回该Cookie的副本。
+
+
+字符串   getComment()			返回描述此Cookie目的的注释，如果Cookie没有注释，则返回空。

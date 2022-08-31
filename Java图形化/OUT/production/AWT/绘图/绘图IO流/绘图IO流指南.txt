@@ -1,0 +1,7 @@
+
+
+static BufferedImage read(File input)                                  读取本地磁盘图片文件
+
+static BufferedImage read(InputStream input )                          读取本地磁盘图片文件
+
+static boolean write(RenderedImage im,String formatName,File output)   往本地磁盘中输出图片文件

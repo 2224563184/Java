@@ -1,0 +1,10 @@
+
+
+		需求: 使用实体类, 读取所有的配置文件属性值
+
+
+
+1. 配置文件编写对象和属性
+2. 定义一个实体类,编写对应的属性
+3. 给实体类添加该注解:  @ConfigurationProperties( prefix="配置前缀")
+4. 打开启动类, 添加该注解: @EnableConfigurationProperties (实体类.class)

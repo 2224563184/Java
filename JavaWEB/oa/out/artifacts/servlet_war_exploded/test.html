@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+  <html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Title</title>
+      </head>
+  <body>
+ <script type='text/javascript'>
+  function myFunction(get,queu){ 
+  if (window.confirm('确定删除?')){
+  document.location.href='get/dept/detect?Numbering=queu'
+  }
+}
+</script>
+
+<h1>欢迎使用</h1>
+ <table border='1xp' cellspacing='0' align='center'frame='box'>
+      <tr>
+        <th>列号</th>
+        <th>部门编号</th>
+        <th>部门名称</th>
+        <th>操作</th>
+          </tr>
+    <tr>
+         <th>"+(++index)+" </th>
+         <th>"+Numbering+" </th>
+         <th>"+name+"</th>
+         <td>
+             <a href='javascript:void (0)' onclick='myFunction("+contextPath+","+Numbering+")'>删除</a>
+              <a href='edit.html'>更新</a>
+              <a href='contextPath/dept/detail?Numbering="+Numbering'>详情</a>  //请求详情
+            </td>                                            //Numbering属性:部门编号
+        </tr>
+    }
+
+    if (out!=null) {
+     </table>
+  <hr>
+  <a href='add.html'>新增部门</a>
+  </body>
+  </html>

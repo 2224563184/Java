@@ -1,0 +1,24 @@
+      try {
+                stmt = this.prepareCall(conn, sql);
+                     返回结果集对象
+
+                this.fillStatement(stmt, params);
+                      传递结果集对象,和占位符参数
+
+                stmt.execute();
+
+
+                rows = stmt.getUpdateCount();
+                this.retrieveOutParameters(stmt, params);
+            } catch (SQLException var11) {
+                this.rethrow(var11, sql, params);
+            } finally {
+                this.close(stmt);
+                if (closeConn) {
+                    this.close(conn);
+                }
+
+            }
+
+            return rows;
+        }

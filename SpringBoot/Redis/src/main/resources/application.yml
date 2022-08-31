@@ -1,0 +1,8 @@
+
+#spring:
+#  redis:
+#    port:
+#    host:
+#    username:
+#    password:
+#    client-type: jedis

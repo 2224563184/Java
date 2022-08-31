@@ -1,0 +1,4 @@
+1. 定义一个类
+2. 添加 @ControllerAdvice
+3. 函数添加  @ExceptionHandler(value = {异常类型.class, 异常类型.class })
+4. 响应浏览器

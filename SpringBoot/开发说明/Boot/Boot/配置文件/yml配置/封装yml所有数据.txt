@@ -1,0 +1,7 @@
+
+
+                  将yml所有的属性和对象封装到一个对象内                      
+
+
+1.在控制器中定义属性:  org.springframework.core.env.Environment    evn
+2.给该属性添加自动装配注解: @Autowired

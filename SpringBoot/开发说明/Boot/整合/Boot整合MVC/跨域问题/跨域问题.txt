@@ -1,0 +1,44 @@
+
+
+问题：  当浏览器的 “协议 \ ip地址 \ 端口号”和服务器的 “协议 \ ip地址 \ 端口号”其中一个不相同时，会出现跨域问题
+
+案例：
+             浏览器请求： http：//127.0.0.1:8080
+             服务器映射： http:   //127.0.0.1:90
+
+             浏览器请求： http： //127.0.0.1:8080
+             服务器映射： https:   //127.0.0.1:8080
+
+
+
+解决方案： 
+
+
+			方式一               局部跨域 
+            
+                  @CrossOrigin     
+                  
+        public class  Crons{
+
+              @Mapping("/query")
+          public String xxx(){}
+       }
+ 
+
+
+
+                                方式二	      全局跨域 [默认跨域]
+
+
+@Configuration
+public class WebMvcConfig extends WebMvcConfigurationSupport {
+
+    @Override
+    protected void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**")
+                .allowedOrigins("*")
+                .allowCredentials(false)
+                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+                .maxAge(3600);
+    }
+}

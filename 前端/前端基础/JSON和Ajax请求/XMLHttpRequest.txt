@@ -1,0 +1,80 @@
+
+                   XMLHttprequest对象
+
+
+
+
+      open()       设置请求
+参数:
+ method	           请求方式
+ url	           协议+请求路径
+ asyncFlag	   是否异步操作
+ user	           账号名称
+ password	   密码
+
+
+
+
+      send()	   发送请求  
+参数:
+content            附带内容,可以忽略
+
+
+
+     abort()       断开连接
+参数:
+
+
+
+setRequsetHeader() 明确声明请求方式
+
+
+
+
+
+onreadystatechange() 发送异步请求以后,自动调用该函数
+
+
+
+
+
+  readyState()     获取请求状态
+参数:
+ 0                 未开始
+ 1 		   读取中
+ 2                 已下载完成
+ 3 		   信息交换中
+ 4                 处理完成
+
+
+
+
+  status()         获取响应状态码
+参数: 
+ 200               正常
+ 400		   错误请求
+ 401	 	   错误的HTTP请求
+ 403		   未经过允许的访问
+ 404		   未经过允许的访问
+ 500               服务器错误	
+ 
+
+
+
+  responseType()   设置响应对象的数据类型
+参数:
+ ""                默认String
+ "text"            设置为String
+ "document"	   Document对象
+ "json"    	   javascript 对象
+ "blob"      	   Blob对象
+ "arrayBuffer"	   ArrayBuffer对象
+
+
+
+
+
+  responseText()   接收响应对象
+
+
+

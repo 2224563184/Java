@@ -1,0 +1,63 @@
+boolean authenticate(HttpServletResponse response) 使用为ServletContext配置的容器登录机制来验证发出此请求的用户。
+
+String changeSessionId() 返回新的会话ID。
+
+String getAuthType() 返回用于保护servlet的认证方案的名称。
+
+String getContextPath() 返回请求URI中表示请求的上下文的部分。
+
+Cookie[] getCookies() 返回一个包含客户端随该请求发送的所有Cookie对象的数组。
+
+long getDateHeader(String name) 返回指定请求头的值，是一个代表Date对象的长值。
+
+String getHeader(String name) 返回指定请求头的值，是一个字符串。
+
+Enumeration<String> getHeaderNames() 返回此请求包含的所有头文件名称的枚举。
+
+Enumeration<String> getHeaders(String name) 返回指定请求头的所有值，作为String对象的一个枚举。
+
+int getIntHeader(String name) 返回指定的请求头的值为一个int。
+
+String getMethod() 返回该请求的HTTP方法的名称，例如GET、POST或PUT。
+
+Part getPart(String name) 获取具有给定名称的部件。
+
+Collection<Part> getParts() 获取此请求的所有Part组件，前提是它的类型为multipart/form-data。
+
+String getPathInfo() 返回任何与客户端发出此请求时的URL相关的额外路径信息。
+
+String getPathTranslated() 返回Servlet名称之后但在查询字符串之前的任何额外路径信息，并将其翻译成真实的路径。
+
+String getQueryString() 返回请求URL中包含在路径之后的查询字符串。
+
+String getRemoteUser() 如果用户已经通过认证，返回发出此请求的用户的登录名，如果用户没有通过认证，则返回空。
+
+String getRequestedSessionId() 返回由客户端指定的会话ID。
+
+String getRequestURI() 返回该请求的URL部分，从协议名到HTTP请求第一行的查询字符串。
+
+StringBuffer getRequestURL() 重构客户端用于发出请求的URL。
+
+String getServletPath() 返回这个请求的URL中调用Servlet的部分。
+
+HttpSession getSession() 返回与该请求相关的当前会话，如果该请求没有会话，则创建一个。
+
+HttpSession getSession(boolean create) 返回与该请求相关联的当前HttpSession，或者，如果没有当前的会话且创建为真，则返回一个新的会话。
+
+Principal getUserPrincipal() 返回一个包含当前认证用户名称的java.security.Principal对象。
+
+boolean isRequestedSessionIdFromCookie() 检查请求的会话ID是否以cookie的形式出现。
+
+boolean isRequestedSessionIdFromUrl() 已废弃。 从Java Servlet API的2.1版开始，使用isRequestedSessionIdFromURL()代替。
+
+boolean isRequestedSessionIdFromURL() 检查请求的会话ID是否作为请求URL的一部分出现。
+
+boolean isRequestedSessionIdValid() 检查请求的会话ID是否仍然有效。
+
+boolean isUserInRole(String role) 返回一个布尔值，表示认证的用户是否包含在指定的逻辑 "角色 "中。
+
+void login(String username, String password) 在为ServletContext配置的Web容器登录机制所使用的密码验证领域中验证提供的用户名和密码。
+
+void logout() 建立null作为请求中调用getUserPrincipal、getRemoteUser和getAuthType时返回的值。
+
+<T>扩展为HttpUpgradeHandler>。T upgrade(Class<T> handlerClass) 为一个给定的类创建一个HttpUpgradeHandler的实例，并将其用于http协议的升级处理。

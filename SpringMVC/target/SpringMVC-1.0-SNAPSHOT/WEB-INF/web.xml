@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd
+
+"
+         version="3.0">
+<!--
+   思路:
+       一. 匹配请求路径的映射对象
+       二. 创建映射对象
+          1.映射对象名称
+          2.映射对象的路径
+          3.初始化:
+           (1)实现上下文配置:  contextConfigLocation
+              上下文配置路径:  classpath:SpringMVC.xml
+           (2)设置初始化时机:  <load-on-startup>1</load-on-startup> 服务器启动前
+
+-->
+
+
+
+  <!-- Servlet 注册前端控制器  -->
+  <servlet>
+<!--   前端控制器任意名称  -->
+    <servlet-name>SpringMVC</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+      <!--  初始化  -->
+      <init-param>
+<!--        实现功能: 上下文配置      -->
+           <param-name>contextConfigLocation</param-name>
+<!--        设置参数: classpath:相对路径的MVC配置文件  -->
+          <param-value>classpath:SpringMVC.xml</param-value>
+      </init-param>
+<!--       初始化时机: 服务器启动前  -->
+      <load-on-startup>1</load-on-startup>
+  </servlet>
+
+
+<!--   映射  -->
+    <servlet-mapping>
+<!--  映射对象     -->
+        <servlet-name>SpringMVC</servlet-name>
+<!--  请求路径      -->
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+</web-app>
+        

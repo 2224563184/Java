@@ -1,0 +1,32 @@
+
+				@ResponseBody
+
+1.在映射路径的函数上添加该注解, 然后设置返回类型为指定对象 或者 数组
+2.return  对象  或者 数组
+
+@RequestMapping("")
+@ResponseBody
+pubulic  ArrayList<Integer> test(){
+
+return  ArrayList;
+}
+
+
+				ResponseBody
+
+1.在映射路径的函数形参中定义该对象
+2.返回类型为ResponseBody, 泛型为数组 或者 指定对象
+
+@RequestMapping("")
+pubulic ResponseBody<Integer> test(ResponseBody body){
+
+return  body;
+}
+
+
+
+
+
+
+			        警告:需要添加jons依赖
+

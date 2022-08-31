@@ -1,0 +1,25 @@
+String actionCommand = e.getActionCommand();
+            switch (actionCommand){
+                case "打开":
+                    FileDialog fileload=new FileDialog(frame, "选择文件", FileDialog.LOAD);
+                     fileload.setVisible(true);
+                    String dir = fileload.getDirectory();
+                    String file = fileload.getFile();
+                    try {
+                        image=ImageIO.read(new File(dir,file));
+                        drawArea.repaint();
+                    } catch (IOException ioException) {
+                        ioException.printStackTrace();
+                    }
+                    break;
+                case "另存为":
+                    FileDialog filesave=new FileDialog(frame, "保存文件", FileDialog.SAVE);
+                    filesave.setVisible(true);
+                    String dird = filesave.getDirectory();
+                    String fileName = filesave.getFile();
+                    try {
+                        ImageIO.write(image,"JPEG",new File(dird,fileName));
+                    } catch (IOException ioException) {
+                        ioException.printStackTrace();
+                    }
+                    break;

@@ -1,0 +1,14 @@
+import   vueRoter   from‘vue-Router‘
+
+
+
+new  Vue({
+
+setup(){
+
+var 路由对象=vueRoter；
+
+
+}
+
+})

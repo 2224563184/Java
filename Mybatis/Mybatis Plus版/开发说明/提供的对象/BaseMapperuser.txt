@@ -1,0 +1,13 @@
+
+
+		BaseMapperuser
+
+	继承该接口可以实现快速开发
+
+
+
+
+selectById(Serializable ser):     返回 "iD列指定值" 的结果对象                     SELECT * FROM  XXX  WHERE iD= xxx 
+selectList()                      根据对象的属性名称, 返回结果集
+mapper.insert(T  t):              根据对象属性值, 增加指定列的行记录               INSERT   INTO  XXX  (name, age) VALUES (XXX, XXX)
+警告; 使用这些函数之前, 需要映射好 "数据表" 

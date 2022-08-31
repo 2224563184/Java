@@ -1,0 +1,11 @@
+
+
+结构： 
+
+ anys   xxx (){
+                  
+ 
+ let  res =    await   loginApi（）     await:  自动寻找对应的函数
+                                                             res：接收异步的返回值
+
+}

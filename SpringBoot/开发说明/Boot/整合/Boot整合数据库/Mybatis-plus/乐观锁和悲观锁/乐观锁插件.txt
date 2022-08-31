@@ -1,0 +1,9 @@
+
+
+		乐观锁
+
+
+1.数据库要拥有该列:   int version
+2.实体类映射该列:     @Version
+3.拦截器添加该对象    OptimisticLockerInnerInterceptor
+4.实现修改数据

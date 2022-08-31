@@ -1,0 +1,42 @@
+
+	
+
+
+<iframe>   内联框架	 
+ src                  路径
+ frameborder          边框
+
+
+
+<ul>	   小框架
+<li>		      行
+
+
+
+
+
+<form>       表单
+  action              请求路径
+  method              请求方式, 默认get
+
+
+
+
+
+<select>     下拉选择框
+<option>     条目
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

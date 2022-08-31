@@ -1,0 +1,5 @@
+
+
+1.Vue.expand({})
+2.编写配置项
+3.components项内, 引用组件对象 

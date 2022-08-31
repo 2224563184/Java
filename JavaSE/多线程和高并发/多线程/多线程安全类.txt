@@ -1,0 +1,10 @@
+一、
+同步：
+    1.StringBuffer  同步        synchronizedCollection(Collection<T> c)        可替代
+    2.Vector        同步       Collections.synchronizedList(new ArrayList<>()) 可替代
+    3.Hashtable     同步       synchronizedMap(Map<K,V> m)                     可替代
+二、
+不同步替代：
+          1.StringBuilder   替代  StringBuffer
+          2.ArrayList       替代  Vector
+          3.HashMap         替代  Hashtable

@@ -1,0 +1,14 @@
+
+
+
+                            
+spring.profiles.active=div        使用 "指定名称" 的 application-配置文件
+
+servlet.port= 端口
+
+servlet.context-path=                  /项目名
+
+server.servlet.encoding.charset=utf-8server.servlet.encoding.charset= 请求编码
+ 
+
+

@@ -1,0 +1,5 @@
+DROP DATABASE 库名称                                 删除库
+DROP  TABLE 表名称                		     删除表
+ALTER TABLE 表名称                                   删除列
+DELETE FROM 表名称                                   删除行  
+ALTER TABLE 表名称 DROP PRIMARY KEY;                 删除主键 

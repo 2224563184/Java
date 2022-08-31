@@ -1,0 +1,86 @@
+
+
+
+
+                    方式一
+
+		
+
+     axios.get(参数1, 参数2, 参数3) 
+参数:
+  1."":协议请求路径
+  2.{}:请求函数
+  3.{}:请求体
+
+示范:           
+     var aixos =  function (){   
+          
+//          这里是请求方式和具体参数
+         axios.get("/user", {
+           
+//          设置请求参数
+	    params:{ 
+              name:"简旻霞",
+              age:1 
+            }, 
+
+//          设置请求头
+            headers:{
+             
+             }
+
+
+//          这里是接收响应数据
+	}).then(value =>{
+          
+         },{
+//          设置参数
+            data{
+             user:222
+            }
+//     接收响应数据
+}).then(response=>{
+//     解析为数组
+    var arr = response.data()
+});
+
+}
+
+
+
+
+                方式二
+
+
+
+     fetch()     
+参数:
+ 1. ""                   协议+路径+参数    
+ 2. {}                   设置结构体
+
+function() {
+        fetch("http://127.0.0.1:8080/service?name=李佩金&age=23", {
+            //请求方式
+            method: "post",
+            //请求头表达式
+            headers : {
+                address:"ssssssssssssss"
+            },
+            // 请求体表达式
+            body :'user=admin&password=123'
+        })
+    }function() {
+        fetch("http://127.0.0.1:8080/service?name=李佩金&age=23", {
+            //请求方式
+            method: "get",
+            //请求头表达式
+            headers : {
+                address:"ssssssssssssss"
+            },
+            // 请求体表达式
+            body :'user=admin&password=123'
+        }).then(response=>{
+//     解析为数组
+    var arr = response.data()
+});
+    }

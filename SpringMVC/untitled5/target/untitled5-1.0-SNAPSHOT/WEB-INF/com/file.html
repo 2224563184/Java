@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a th:href="@{/test}">测试请求</a>
+<form th:action="@{/testUp}" method="post" enctype="multipart/form-data">
+    <input type="file" name="photo"><br>
+    <input type="submit">
+</form>
+</body>
+</html>

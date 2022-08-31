@@ -1,0 +1,8 @@
+                                      SpringMVC
+
+             SpringMVC 也叫 Spring WEB MVC, 基于spring的一个框架, 它属于spring的一个模块!专门用来做web开发的。
+         MVC框架是在Servlet基础上加入一些新功能, 让Web开发更方便
+             总结: MVC就是一个Spring, 只不过增加了一些Web开发功能
+
+            
+ 

@@ -1,0 +1,3 @@
+                             
+
+2.在映射函数的形参表中,定义HttpSession对象和名称, 使用addAttribute()函数设置名称和数值

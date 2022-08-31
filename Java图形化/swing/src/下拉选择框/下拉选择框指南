@@ -1,0 +1,13 @@
+
+使用过Mode的JComboBox，无法使用JComboBox类方法！！！！
+
+           JComboBox
+JList()                                 构造一个空的只读模型
+JList(E[] listData)  ，                 将泛型数组添加到列表框
+JList(Vector<? extends E> listData)     将条目添加到列表框
+JList(ListModel<E> dataModel)           添加泛型ListMode对象或者deMode对象到列表框，
+
+void setEditable(boolean aFlag)        设置是否可以直接修改 列表文本框的值,默认不可以
+void setMaximumRowCount(int count)     设置列表框的可视高度可以显示多少行列表项
+void setSelectedIndex(int anIndex)     设置默认选中
+void setSelectedItem(Object anObject)  根据列表项的值,设置默认选中

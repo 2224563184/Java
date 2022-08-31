@@ -1,0 +1,10 @@
+
+
+    按照注册顺序拦截
+
+boolean   preHandle( )
+
+
+      倒叙执行    
+void      postHandle():        
+void      afterCompletion()

@@ -1,0 +1,11 @@
+
+
+
+        驱动兼容
+
+
+Driver8++版本, 必须要设置时区
+解决方法:
+ jdbc:mysql://127.0.0.1:3306/bjpowernode?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false 
+
+  

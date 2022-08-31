@@ -1,0 +1,12 @@
+
+
+1.导入约束
+xmlns:context="http://www.springframework.org/schema/context"
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+xmlns:aop="http://www.springframework.org/schema/aop"
+
+2.注解标签
+<context:annotation-config/>
+
+3.在属性或者set方法上使用

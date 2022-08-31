@@ -1,0 +1,8 @@
+JProgressBar() 创建一个水平进度条，显示边框但没有进度字符串。
+JProgressBar(int orient) 创建具有指定方向的进度条，可以是 SwingConstants.VERTICAL或 SwingConstants.HORIZONTAL 。
+JProgressBar(int min, int max) 创建具有指定最小值和最大值的水平进度条。
+JProgressBar(int orient, int min, int max) 使用指定的方向，最小值和最大值创建进度条。
+JProgressBar(BoundedRangeModel newModel) 创建一个水平进度条，使用指定的模型来保存进度条的数据
+
+void setValue(int n)                     设置进度条的值
+int  getValue()                          获取进度条的值

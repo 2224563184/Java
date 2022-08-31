@@ -1,0 +1,41 @@
+
+
+		响应报文
+
+
+
+响应格式:
+
+  响应行
+  响应头
+  空行
+  响应体
+
+
+
+一. 响应行:
+           1.HTTP协议版本
+	   2.响应状态码
+           3.响应状态字符串
+ 
+
+
+
+二. 响应头:      
+           1.Content-Type
+           2.Content-length
+           3.Content-encoding
+
+三. 空行
+
+
+
+四.  响应体:
+              <html>
+ 		  <head>
+		  </head>	
+		  <body>
+                     xxx
+		  </body>
+	      </html>
+            

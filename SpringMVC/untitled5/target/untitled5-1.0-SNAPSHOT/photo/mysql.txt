@@ -1,0 +1,14 @@
+mysqld --initialize --user=mysql --console
+mysqld --install
+net start mysql
+
+mysql -u root -p;
+
+忘记密码
+mysqld --console --skip-grant-tables --shared-memory
+flush privileges;
+
+ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 000;
+
+
+D:\Mysql-5.7\bin

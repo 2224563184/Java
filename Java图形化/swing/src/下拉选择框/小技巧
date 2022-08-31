@@ -1,0 +1,9 @@
+
+下拉选择框 添加数组以外的数据:
+
+Vector<String>vector=new Vector<>();
+       List<String>list=List.of("java","javaEE","Go");
+       vector.addAll(list);
+
+
+列表框只能在构造的时候 添加String[] 或者 deMode，建议使用deMode方便以后的增删改

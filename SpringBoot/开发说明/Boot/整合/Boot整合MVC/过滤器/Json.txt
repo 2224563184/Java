@@ -1,0 +1,9 @@
+com.alibaba.fastjson.JSON
+
+介绍：  原生的Servlet不能直接通过 @ResponseBody 给浏览器发送Json对象， 需要通过该类来实现Json对象
+
+
+
+
+static String   toJsonSting( Object  obj )                  创建Json对象
+Response.getWriter().write(Json)                             获取打印流，给浏览器打印数据

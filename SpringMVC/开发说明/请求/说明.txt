@@ -1,0 +1,6 @@
+1. HttpMessageConverter,报文信息转换器,将请求报文转换为Java对象,或将Java对象转换为响应报文
+2. HttpMessageConverter提供了两注解和两类型: @RequestBody, @ResponseBody, RequestEntity,ResponseEntity
+
+
+请求报文: 请求报文包括请求头, 请求体, 请求空行, 参数的一个总体
+				

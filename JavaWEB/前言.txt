@@ -1,0 +1,19 @@
+
+
+	Servlet-API
+
+
+1.tomcat自带了Servlet-API.jar包,  不需要你导入依赖
+2.tomcat9以下和JavaEE7以下兼容
+
+
+
+
+
+
+
+
+        乱码问题
+
+1.设置接收请求的数据编码
+2.设置响应浏览器的数据编码

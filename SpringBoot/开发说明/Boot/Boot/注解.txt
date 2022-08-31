@@ -1,0 +1,35 @@
+
+
+@SpringBootApplication    		 复合注解
+      scanBasePackages:  		 扫描文件包                
+   (1)@@SpringBootConfiguration          配置类, 管理Bean对象
+   (2)@EnableAutoConfiguration           自动配置类, 自动配置热门配置对象
+   (3)@ComponentScan                     扫描器, 创建的Bean对象自动装入IOC容器; 默认扫描当前文件包
+   (4)@Inherited                         继承注解, 可以继承xml配置或配置类
+    
+
+@EnableConfigurationProperties           绑定想获取配置属性值的类
+@ConfigurationProperties		 获取配置文件的同名属性值
+		  prefix                 前缀
+
+
+@propertySource          	         导入properties文件
+@importResource           		 导入xml文件
+@transaction             		 开启事务
+@ExceptionHandler        		 捕获指定异常 
+
+
+
+创建Bean:  		
+@ControllerAdvice        		 拓展版
+@Component              		 任意层
+@Service                 		 业务层
+@Repository                		 持久层
+@Bean                    		 注册层
+
+获取Bean:
+@Autowired               		 获取同类对象
+@Qualifier               		 获取同名对象
+@Value                   		 获取属性值,默认同名
+
+

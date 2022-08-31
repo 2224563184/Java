@@ -1,0 +1,1 @@
+insert into A表.列   select 列 from B表

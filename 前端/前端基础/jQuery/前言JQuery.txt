@@ -1,0 +1,35 @@
+
+			
+
+前置要求:
+1.从 jquery.com 网站下载 jQuery类库
+2.在html 5文档中,使用此标签导入jQuery类库:
+<script src="jquery-1.10.2.min.js"></script>
+
+
+
+创建jQuery对象:  var jq =  new jQuery(){}
+
+        简化版:  $()
+
+
+
+
+1.参数为[函数]时:	         加载后执行
+	 
+
+2.参数为[选择器]时:        	创建jQ对象和dom对象, this代表 "dom"
+①iD属性:	             	 同上
+②标签名:		         同上
+③class属性:		         同上
+
+3.参数为[标签]时:               创建多个
+	  
+4.参数为[DOM对象]时:	         doc转换jQuery
+
+5.参数为[无参]时: 	  	 直接创建Query对象
+
+
+
+
+

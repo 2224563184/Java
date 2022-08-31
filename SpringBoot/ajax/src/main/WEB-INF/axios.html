@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script  src="https://cdn.bootcdn.net/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
+</head>
+<body>
+
+<input type="button"value="测试2" id="yy2">
+</body>
+ <script>
+     var yy = document.getElementById('yy2');
+     axios.default.baseURL='http:127.0.0.1:8080';
+     yy.onclick=function() {
+         axios.get("http://127.0.0.1:8080/service", {
+             params:{
+                 name:"小简简",
+                 age:100
+             }
+         }
+         ).then(response=>{
+             var data = response.data;
+             for (var i = 0; i < data.length; i++) {
+                 console.log(data[i])
+             }
+         })
+     }
+ </script>
+
+
+</html>

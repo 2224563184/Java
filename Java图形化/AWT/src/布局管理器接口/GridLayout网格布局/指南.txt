@@ -1,0 +1,10 @@
+一、
+       GridLayout布局管理器将容器分割成纵横线分割的网格，每个网格的区域大小相同。
+     当使用了GridLayout布局的容器中添加了组件时，默认从左向右、从上向下依次添加到每个网格中，与
+     FlowLayout不同的是，该布局中的各个组件的大小自动占满整个区域
+
+二、
+   构造方法
+           GridLayout(int rows, int cols):采用指定的行数、列数，以及默认的横向间距、纵向间距
+         将容器分割成多个网格
+           GridLayout(int rows,int clos,int hgap,int vgap):采用指定的行数、列数，指定的横向、纵向

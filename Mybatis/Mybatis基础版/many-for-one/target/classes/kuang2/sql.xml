@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kuang2.tets">
+    <resultMap id="getMap" type="kuang2.Teacher">
+        <result property="name" column="name"></result>
+        <result property="age" column="age"></result>
+        <result property="tid" column="tid"></result>
+<!--        <collection property="tid" column="tid" javaType="kuang2.Student" select="getStudent">-->
+<!--        </collection>-->
+    </resultMap>
+    <select id="getList" resultMap="getMap">select * from teacher</select>
+<!--    <select id="getStudent" resultType="kuang2.Student">select * from student where tid=#{id}</select>-->
+
+</mapper>

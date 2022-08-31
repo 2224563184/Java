@@ -1,0 +1,9 @@
+
+
+ 1.XMLHttprequest
+
+ 2.Axios(推荐,新技术)
+
+
+
+ 

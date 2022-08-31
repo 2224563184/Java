@@ -1,0 +1,7 @@
+
+
+
+   同级config下的 >同级下 >resource下config>resorce下
+
+
+总结: 项目.jar 同文件包下 > 项目包内 > 子同包内... 

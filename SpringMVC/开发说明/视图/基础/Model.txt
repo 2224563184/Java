@@ -1,0 +1,3 @@
+
+
+addAttribute(页面, Obj):      添加html文件和任意对象, 该对象存入请求域

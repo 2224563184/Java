@@ -1,0 +1,24 @@
+
+
+
+
+一、结构
+                            NORTH
+
+
+           WEST             CENTER               EAST
+
+
+                            SOUTH
+
+二、构造方法
+         1.BorderLayout():                 使用默认的水平间距、垂直间距创建 BorderLayout布局管理器
+         2.BorderLayout(int hgap,int vgap): 使用指定的水平间距、垂直间距创建 BorderLayout布局管理器
+三、总结
+1.BorderLayout将容器分为   EAST、SOUTH、WEST、NORTH、CENTER五个区域，普通组件可以放在5个区域任意一个。
+2.当改变使用了BorderLayout的容器大小时，NORTH、SOUTH和CENTER区域的长度会被调整，WEST、EAST、CENTER区域的高度会被调整     只有中间区可以变大小
+3.在5个区域的其中一个添加多个组件时最后的组件覆盖该区域
+4.如果添加的组件不指定区域时,组件默认添加在中间CENTER区域
+
+
+

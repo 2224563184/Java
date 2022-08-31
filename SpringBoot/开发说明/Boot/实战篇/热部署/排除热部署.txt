@@ -1,0 +1,21 @@
+
+	默认排除热部署重启的文件包
+
+1./META-INF/maven
+2./META-INF/resources
+3./resources
+4./static
+5./public
+6./templates
+
+
+         配置文件排除热部署重启
+
+
+spring:
+  devtools:
+    restart:
+#排除热部署
+      exclude:  static/**
+#关闭热部署
+       enabled: off

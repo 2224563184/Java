@@ -1,0 +1,8 @@
+SHOW       DATABASES               查看所有库
+
+SHOW       TABLES                  查看所有表
+
+DESCRIBE   表名                    查看表结构
+
+SELECT     *     FROM  表名        查看所有行
+

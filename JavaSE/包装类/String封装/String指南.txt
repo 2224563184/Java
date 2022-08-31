@@ -1,0 +1,25 @@
+
+String类：
+boolean   startsWith(String prefix):                          以指定要求开头
+boolean   endsWith(String suffix)  :                 	以指定要求结尾
+int       indexOf(String ch)                                         从左向右, 指定字符的索引位置
+int       lastindexOf(String ch)                                   从右向左, 指定字符的索引位置
+String    toUpperCase():                                             转大写
+String    toLowerCase():                                             转小写
+String    substring(int beginIndex):                          截取一个字符串
+String    substring(int beginIndex,int   endIndex):   截取范围内的字符串
+int       length():                                  			字符串长度
+String    toString()                                 		转String,不能null
+String    String.valueOf()                           		转String类型,可以null
+String[] split(String regex):                       		分割
+int      compareToIgnoreCase(String str)                 按字符顺序比较两个字符串，忽略大小写差异.相差值
+boolean   contains()					模糊查询
+
+
+
+
+总结: 每次修改String的值,都会生成新的 new地址 , 为了优化这个问题,java提供了 Stringbuilder StringBuffer两个方法
+Stringbuilder可以修改String的值,并且不会生成新的 new地址,但是没有并发线程安全
+StringBuffer可以修改String的值,并且不会生成新的 new地址,有并发线程安全,性能比上面的略差一些
+
+Stringbuilder > StringBuffer > String

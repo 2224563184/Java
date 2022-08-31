@@ -1,0 +1,38 @@
+
+                      GET方式
+
+@GetMapping（“/路径“ ）
+Add( @RequestParam   int  age)   
+
+
+
+
+		 其他方式
+
+  Add( @RequestBody User user )                                  解析JSON,  对象名和属性名一致。 
+  Add( @RequestBody Map map )                                  解析JSON 
+  Add( User  user )			   	                           封装，属性名一致。
+  Add( String  对应名称 ):	    	          		       接收多个同名参数		
+  Add(@RequestParam("name")    String age ) 	       别名                                                              	     
+  Add( Intereg int  )                               		       封装                	        
+  Add( HttpRequestServlet  request )    
+
+
+
+		路径变参数
+
+  http://127.0.0.1：8080/A路径/B路径
+  @ReqeustMapping(  "/A路径/{age}" )
+  Add (  @PathVariable  int  age )
+
+
+
+
+
+
+
+ 
+
+
+
+

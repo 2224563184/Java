@@ -1,0 +1,26 @@
+一、Thread
+1.实现多线程
+①.定义一个类MyThread，继承Thread类
+②.MyThread类中重写run()方法
+③.创建MyThread类的对象
+④.启动线程，对象类start方法
+
+run():是用来封装被线程执行的代码
+start():启动线程;然后由JVM调用此线程的run()方法
+
+2.设置和获取线程名称
+①Thread类中设置和获取线程名称的方法
+②void setName(String name):将此线程的名称更改为等于参数的name
+③String getName():返回此线程的名称
+④Thread.currentThread().getName():返回对当前正在执行的线程对象的引用
+
+3.线程优先级
+1.分时式调度模型：所以线程轮流使用CPU的使用权，评价分配每个线程占用CPU的时间片
+2.抢占式调度模型：优先让优先级高的线程使用CPU，如果线程的优先级相同则随机，优先级高的线程获取的CPU时间片相对多一些
+①public final int getPriority():返回此线程的优先级      查看优先级
+②public final void setPriority(int newPriority):更改此线程的优先级
+
+4.线程控制
+1.static void sleep(long millis)：使当前正在执行的的线程停留（暂停执行）指定的毫秒数
+2.void join():                    等待这个线程死亡
+3.void setDaemon(boolean on)：     将此线程标记为守护线程，当运行的线程都是守护线程使，JVM虚拟机将退出

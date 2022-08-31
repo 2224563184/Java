@@ -1,0 +1,15 @@
+
+1.在路由配置文件中，放入子路由
+
+
+2.export default new Router({
+     router:[
+                {
+                    path:'/test',
+            comment: 'Home', 
+//      子路由
+	    children:[{path:'路径',comment:'路由组件'
+ 	    }
+	]}
+     ]
+ })

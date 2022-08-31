@@ -1,0 +1,24 @@
+
+			
+			介绍	
+
+
+	Json的数据结构是哈希表,它的key必须是字符串类型
+
+
+
+
+
+		        语法
+
+
+         var map={"key":obj,"key":obj}
+
+
+
+
+			常用函数
+
+
+JSON.stringify()  json 对象转换成为 json 字符串
+JSON.parse()      json 字符串转换成为 json 对象 

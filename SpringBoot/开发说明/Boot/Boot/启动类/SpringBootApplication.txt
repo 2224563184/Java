@@ -1,0 +1,1 @@
+static  run(主函数类.class, 主函数的形参名)

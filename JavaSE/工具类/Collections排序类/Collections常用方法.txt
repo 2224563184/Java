@@ -1,0 +1,19 @@
+Collections:
+Collections 是一个操作 Set, List 和Map等集合的工具类
+提供了一系列静态的方法对集合元素进行排序、查询和修改排序操作
+
+使用方法: 需要排序的类要实现 "Comparator比较器接口"并且重写方法
+
+ 1) reverse(List):           顺序反转
+ 2) shuffle(List):           对List 集合元素进行随机排序
+ 3) sort(List):              自然排序
+ 4) sort(List, Comparator):  指定的 Comparator实现类对 List 集合进行排序
+ 5) swap(List, i, j):        i处元素和j处元素进行交换
+
+
+1) Object max(Collection):根据元素的自然顺序,返回给定集合中的最大元素
+2) Object max(Collection, Comparator):根据 Comparator 指定的顺序返回给定集合中的最大元素
+3) Object min(Collection,Comparator)  根据 Comparator 指定的顺序返回给定集合中的最小元素
+4) int frequency(Collection, Object):返回指定集合中指定元素的出现次数
+6) void copy(List dest,List src):将src中的内容复制到dest中
+7) boolean replaceAll(List list, Object oldVal, Object newVal): 使用新值替换List对象的所有旧值

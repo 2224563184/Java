@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--mapper:整个文件的大标签,  用来开始和结束xml文件-->
+<!--namespace属性: 指定命名空间(文件包), 区分不同的mapper.xml文件中相同的 "name属性" -->
+
+<mapper namespace="za">
+
+<!--     SQL语句标签,    iD属性: SQL标签名称
+             parameterType属性:  设置传递参数的数据类型
+                resultType属性:  结果集泛型
+               例如 Student.getName(String  "id")    -->
+
+    <select id="name" resultType="Student" >
+        <!-- 不能使用 "*"设置查询结果, 重点!!! -->
+        select `user`,`pass` from `user`
+    </select>
+    <select id="uu" parameterType="int" resultType="Student">
+        select `user`,pass from `user` where `user`=#{id}
+    </select>
+</mapper>

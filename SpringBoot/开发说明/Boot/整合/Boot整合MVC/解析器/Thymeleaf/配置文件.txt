@@ -1,0 +1,12 @@
+spring:
+  thymeleaf:
+#高速缓存
+    cache: false
+# 前缀
+    prefix: classpath:/templates/
+# 后缀
+    suffix: .html
+    mode: HTML
+    encoding: UTF-8
+    servlet:
+      content-type: text/html

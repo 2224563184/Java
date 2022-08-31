@@ -1,0 +1,35 @@
+
+         @ReuqestMapping
+
+
+
+
+             Get方式/Post方式
+
+方式1. 在映射函数的形参列表()中, 添加 Servlet-API ->    HttpRequestServlet.getparam();
+方式2: 在映射函数的形参列表中,形参名和请求参数名一致即可;  如果同名称有多个参数值, 将基本类型转换成数组即可
+方式3: 参数名映射形参名: @RequestParam
+                            value属性: 参数名
+                         required属性: 自动装配, 默认无法装配抛出异常
+                   
+
+
+
+
+
+
+
+
+
+
+
+	Rest方式
+    
+  1. 浏览器:请求地址/参数值/参数值     
+  2. 服务器:
+             (1) @RequestMapping("/请求地址/{任意名称}{任意名称}")
+             (2) String 函数(@PathVariable("对应名称")对应的包装类  名称)
+
+示范:浏览器:  /testUser/1
+     服务器: @RequestMapping("/testUser/{name}
+          String  test(@PathVariable("name")Integer id) { System.out.println(id) }

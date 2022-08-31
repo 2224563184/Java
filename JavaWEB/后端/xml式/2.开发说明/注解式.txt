@@ -1,0 +1,12 @@
+
+	"@WebServlet"  Servlet注解
+
+1.urlPatterns    请求路径, 必须写		          等价该标签<url-pattern>/dept/detail</url-pattern>	
+2.name           映射对象重命名,默认当前对象                等价该标签<servlet-name>dept</servlet-name>
+3.value          映射类的相对路径,默认当前类路径          等价该标签<servlet-class>src.Details</servlet-class>
+
+
+
+
+
+	"@WebFilter"  Filter过滤器注解,  不建议 "注解式"

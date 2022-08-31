@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation=
+       "http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+
+<bean id="user" class="xml式.基础.user">
+<property name="age" value="40"> </property>
+</bean>
+<bean id="stu" class="xml式.基础.studen">
+    <!--基本属性 -->
+     <property name="name" value="么么哒"> </property>
+    <property name="age" value="80"> </property>
+    <!--[]属性 -->
+    <property name="arr" >
+        <array>
+            <value>10</value>
+            <value>10</value>
+            <value>10</value>
+        </array>
+    </property>
+
+    <!--对象属性 -->
+  <property name="user" ref="user"  > </property>
+
+    <!--list集合属性 -->
+    <property name="arrayList">
+        <list>
+            <value>80</value>
+        </list>
+    </property>
+
+    <!-- map集合属性-->
+ <property name="hashMap">
+     <map>
+         <entry key="键" value="值"> </entry>
+     </map>
+ </property>
+
+    <!-- pro集合 -->
+    <property name="properties" >
+        <props>
+            <prop key="配置">值</prop>
+        </props>
+    </property>
+
+    <property name="set">
+      <set>
+          <value>芭比Q</value>
+      </set>
+    </property>
+ </bean>
+
+<bean id="dao" class="半注解式.基础.Dao">
+
+</bean>
+</beans>

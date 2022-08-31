@@ -1,0 +1,40 @@
+
+#                相关请求
+
+server:
+  servlet:
+    context-path: /uu                项目名
+    encoding:
+      charset: UTF-8                 字符编码
+  port: 8080                         端口
+
+
+
+#                相关资源
+
+
+  mvc:                           
+    static-path-pattern:  /res/**    给所有资源添加前缀
+  
+
+                                       
+
+  web:
+    resources:
+      static-locations:              限制资源访问范围;   		默认范围: META-INF,  static,  public,  resources
+				     
+			    
+
+# 资源: 图片/视频/html页面等真实存在的东西
+
+
+
+
+#              html隐藏属性
+
+  mvc:
+    servlet:
+      path:
+    hiddenmethod:
+      filter:          
+        enabled: true

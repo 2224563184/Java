@@ -1,0 +1,18 @@
+
+	GET请求:
+
+1.form标签表    method=get
+2.a标签
+3.link标签引用css
+4.Script标签引用js文件
+5.img标签图片
+6.iframe标签html页面
+7.在浏览器地址栏中输入地址然后按回车
+  说明:GET请求安全性低, 容量有限
+
+
+
+	POST请求:
+
+form标签表    method=post
+  说明:说明:POST请求安全性高, 容量大

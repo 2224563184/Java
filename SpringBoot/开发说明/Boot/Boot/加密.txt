@@ -1,0 +1,1 @@
+DigestUtils.md5DigestAsHex(字符串.UTF8)      MD5加密

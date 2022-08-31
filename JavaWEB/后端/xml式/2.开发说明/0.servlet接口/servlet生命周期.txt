@@ -1,0 +1,22 @@
+1) 初始化阶段
+当用户第一次向服务器发出 HTTP 请求要求访问某个
+Servlet实现类 时，服务器会项目中搜索该类，如果该类没有创建对象则创建该类的对象并且调用对应的函数
+如果该类已存在了则直接调用对应的函数; 注意,ini函数只初始化一次
+
+
+2) 运行阶段
+服务器在该阶段会为当前的请求创建一个 ServletRequest (请求)对象和一个 ServletResponse (响应)对象
+，并将这两个对象作为参数传递给 Servlet实现的 service() 方法。
+service() 方法从 ServletRequest (请求)对象中获得用户的详细请求信息并处理该请求，通过 ServletResponse (响应)对象生成响应结果。
+需要强调的是，在 Servlet 的整个生命周期内，用户每次请求访问 Servlet 时，Servlet 容器都会调用一次 Servlet 的 service() 方法，并且创建新的 ServletRequest 和 ServletResponse 对象。
+
+
+3) 销毁阶段
+当服务器停止时，Servlet 容器需要回收 Servlet 对象所占用的内存，在回收之前，会自动调用该对象的 destroy() 方法做好回收内存前的准备，
+辟如关闭后台线程。destroy() 方法也只会被调用一次。
+注意：Servlet 对象一旦创建就会驻留在内存中一直等待客户端的访问，直到服务器关闭或项目被移除出容器时，Servlet 对象才会被销毁。
+总结
+对 Servlet 声明周期的几点汇总：
+Servlet 对象被创建之后执行 init() 方法，并且 init() 方法只执行一次，其主要目的是完成 Servlet 对象的初始化工作。
+对于 Servlet 对象的 service() 方法，只要用户请求一次，那么 service() 方法就执行一次。
+Servlet 对象被回收之前，destroy() 方法会被调用，该方法只执行一次，执行的时候 Servlet 对象还在。

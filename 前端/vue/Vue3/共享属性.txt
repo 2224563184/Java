@@ -1,0 +1,10 @@
+import {useStore } from 'vuex'; 
+
+setup() { 
+const = useStore() 
+
+store.disphtch('xxxx')
+
+}
+
+//区别：  简化了注册

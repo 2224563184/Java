@@ -1,0 +1,12 @@
+
+//         测试不兼容问题
+
+
+
+@SpringBootTest(class=主题类.class)
+
+pubulic  测试类  {
+
+
+
+}

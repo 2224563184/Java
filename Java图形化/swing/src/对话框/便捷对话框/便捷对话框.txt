@@ -1,0 +1,49 @@
+
+
+                       JOptionPane
+
+
+static void showMessageDialog/static void showInternalMessageDialog      消息对话框,告知用户某事已发生,用户只能单击"确定"按钮
+static int showConfirmDialog/static int   showInternalConfirmDialog      选项对话框,向用户确认某个问题,返回用户点击了哪个按钮
+static String showInputDialog/static String showInternalInputDialog      输入对话框,提示要求用户输入某些信息,返回用户输入的字符串
+static int showOptionDialog/static int showInternalOptionDialog          自定义选项对话框,允许使用自定义选项,可以取代
+                                                                         showConfirmDialog方法,但是使用起来更复杂;
+                                                                         返回用户选择的标记：0  1  2
+
+上面有很多重载的形参,下面展示最全的的形参
+
+  shouXxxDialog(Component parentComponent,
+                   object  message,
+                   String  title,
+                   int     optionType,
+                   int     messageType
+                   Icon    icon,
+                   object[] options
+                   object  initialValue  )
+
+解释:
+parentComponent     当前对话框的父组件
+message             对话框上显示的信息,信息可以是字符串、组件、图片等
+title               当前对话框的标题
+icon                当前对话框左上角的图标
+options             自定义下拉列表的选项
+initialValue        自定义选项中的默认选项
+optionType          当前对话框上显示的按钮类型：DEFAULT_OPTION、YES_NO_OPTION、YES_NO_CANCEL_OPTION、OK_CANCEL_OPTION
+messageType         当前对话框的类型：ERROR_MESSAGE、INFORMATION_MESSAGE、WARNING_MESSAGE、QUESTION_MESSAGE、PLAIN_MESSAGE
+
+
+optionType:
+DEFAULT_OPTION:      默认选项
+YES_NO_OPTION:       是\否\选项
+OK_CANCEL_OPTION:    确定\取消\选项
+YES_NO_CANCEL_OPTION:是\否\取消\选项
+OK_OPTION:           是的选项
+
+messageType :
+ERROR_MESSAGE:       错误信息
+INFORMATION_MESSAGE: 信息和信息
+WARNING_MESSAGE:     警告信息
+QUESTION_MESSAGE:    问题(留言)
+PLAIN_MESSAGE:       平信
+
+

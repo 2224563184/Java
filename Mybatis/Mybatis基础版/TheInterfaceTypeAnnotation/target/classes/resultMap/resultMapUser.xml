@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="resultMap.resultMapUser"  >
+<resultMap id="get" type="resultMap.Users">
+    <result     column="id"       property=      "id1"/>
+    <result     column="username" property="username1"/>
+    <result     column="birthday" property="birthday1" />
+    <result     column="sex"      property=     "sex1" />
+    <result     column="address"  property= "address1"/>
+</resultMap>
+<select id="getMap"  resultMap="get" >select  id,username ,  birthday ,   sex ,    address     from users </select>
+</mapper>

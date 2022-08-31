@@ -1,0 +1,13 @@
+
+
+
+@Configuration(proxyBeanMethods = false)
+public class hig {
+    @Bean
+    public HiddenHttpMethodFilter hiddenHttpMethodFilter(){
+        HiddenHttpMethodFilter filter = new HiddenHttpMethodFilter();
+
+        filter.setMethodParam("_m"); //自定义name
+        return  filter;
+    }
+}

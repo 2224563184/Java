@@ -1,0 +1,10 @@
+ProgressMonitor(Component parentComponent, Object message,   构造一个显示进度的图形对象，通常通过填充矩形栏来完成过程。
+                 String note, int min, int max)
+parentComponent:父级组件
+message:提示信息
+note:   注释信息
+min:最小值
+max:最大值
+
+boolean isCanceled()        判断用户点击“取消”按钮或关闭进度对话框
+void setProgress(int nv)    指示正在监控的操作进度  类似设置进度条

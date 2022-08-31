@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>天知道</title>
+</head>
+<body>
+
+<div id="app">
+    <div>
+        <h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;天知道</h1><br><br>
+        <input type="text"  id="tt">
+        <input type="button" value="搜索"  @keydown.enter="han">
+    </div>
+</div>
+
+<script src="vue.js"></script>
+
+<script>
+    var aix = new  Vue({
+        el:"#app",
+        data:{
+            arr:null,
+            list:[]
+        },
+
+        methods:{
+
+           han:function () {
+               alert("1111111111")
+               aixos.get("http://127.0.0.1:8080/uu/service",{
+
+                   // 设置请求参数
+                   params:{
+                       name:"简旻霞",
+                       age:1
+                   },
+
+                   // 设置请求头
+                   headers:{
+                   }
+
+               }).then(value => {},{
+                   //          设置参数
+                   data:{
+                       user: 222
+                   }
+                   // 接收响应数据
+               }).then(response=>{
+                   //     解析为数组
+                   this.list = response.data()
+                   this.list.forEach(function (v,index,list) {
+                       console.log(v)
+                   })
+               })
+               }
+                }
+            })
+
+
+
+</script>
+</body>
+</html>

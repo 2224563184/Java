@@ -1,0 +1,9 @@
+
+
+                           Nullable
+
+    添加了Nullable注解的元素,都变成了bean对象放入Spring框架
+
+1.Nullable注解可以使用在属性, 值可以为null
+2.Nullable注解可以使用在方法, 返回值可以为null
+3.Nullable注解可以使用在形参, 值可以为null

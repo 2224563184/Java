@@ -1,0 +1,8 @@
+
+
+                                        WebMvcConfigurer
+
+                                 实现该接口的类等价于xml配置文件
+
+
+

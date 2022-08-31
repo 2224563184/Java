@@ -1,0 +1,37 @@
+
+一.
+
+  class test{
+    public  void user(接口 st){}
+  }
+
+    public class demo {
+      public static void main(String[] args) {
+
+        test test = new test();
+
+// 匿名内部类实现该接口, 重写函数体
+       test.t( () -> {逻辑});
+
+      }
+    }
+
+
+
+二.
+  class test{
+    public  void user(接口<接口<?>> st){}
+  }
+
+    public class demo {
+      public static void main(String[] args) {
+
+        test test = new test();
+
+       test.t( 类名::函数 );
+
+      }
+    }
+
+
+

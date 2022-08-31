@@ -1,0 +1,2 @@
+1.context 命名空间
+2.标签:  classpath:jdbc.properties 本地模式 或者 绝对路径

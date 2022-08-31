@@ -1,0 +1,27 @@
+            
+tomact依赖: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An                      error happened during template parsing       
+
+
+解析器前缀写错了: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/TheHomePageindex.html]   
+忘记导入解析器依赖: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/web/WEB-		INF/TheHomePage/index.html]")       thymeleaf-spring5
+
+静态代码块出问题: java.lang.NoClassDefFoundError: Could not initialize class      无法初始化(静态代码块)
+
+
+字符串在标签外面: Element 'bean' cannot have character [children], because the type's content type is element-only.
+
+请求方式不对称: 405
+
+
+
+
+
+                               404
+                   
+                   服务器找不到资源时,404报错
+
+
+1.请求路径不对称
+2.解析器配置错误
+3.没有添加服务器依赖
+4.如果MVC找不到资源,会使用Servlet寻找资源, 当Servlet也找不到时就会报错(需要解析器开发静态资源)

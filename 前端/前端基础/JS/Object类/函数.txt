@@ -1,0 +1,2 @@
+
+Object.defineProperty(对象,"属性",{value:值}):             双向绑定属性

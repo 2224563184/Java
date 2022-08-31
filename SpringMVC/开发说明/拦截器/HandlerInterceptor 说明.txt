@@ -1,0 +1,5 @@
+boolean   preHandle( )        返回true则通过拦截
+    
+void      postHandle():        
+
+void      afterCompletion()

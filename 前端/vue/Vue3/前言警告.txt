@@ -1,0 +1,8 @@
+
+                           1. vue3入口文件导入的文件，名称必须“一致”否则会报错
+		       2.调用use()时，必须在   'main.js' 文件内使用
+
+		vue2导出： export default 
+                    vue3导出：  export 
+
+         

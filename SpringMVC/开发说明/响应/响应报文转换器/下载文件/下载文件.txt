@@ -1,0 +1,15 @@
+
+一:
+1. 获取浏览器的Httpsession对象
+2. 返回配置i对象 Httpsession.getServletContext
+3. 获取浏览器的请求文件路径ServletContext.getRealPath()
+
+
+
+
+二:
+1. 读取配置文件到数组中
+2. 创建响应头对象,并且设置下载方式,文件名称    new HttpHeander().add(name, "attachment;filename=xxx.jpg");
+3. 设置响应状态码                               Httpstatus  ok = Httpstatus.ok;
+4. 响应报文对象, 添加数组, 响应头, 响应状态码   new ResponseBody(数组, 响应头, 状态码)
+5. 返回响应报文对象

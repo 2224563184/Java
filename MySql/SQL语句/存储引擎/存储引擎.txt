@@ -1,0 +1,1 @@
+ENGINE=InnoDB;         设置为默认存储引擎

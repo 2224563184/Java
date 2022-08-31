@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+   <style>
+       #yy{
+           border: solid 1px  #903;
+           width: 200px;
+           height: 200px;
+       }
+   </style>
+
+</head>
+<body>
+
+<input type="button" value="测试" id="bt" > </input>
+
+<script>
+             var bt = document.getElementById("bt");
+                  bt.onclick=function() {
+                      var xhr = new XMLHttpRequest();
+                       xhr.open("GET", "http://127.0.0.1:8080/service",true);
+                       xhr.send();
+                       xhr.onreadystatechange = function() {
+                           if (xhr.readyState == 4){
+                               if (xhr.status >= 200&&xhr.status < 300){
+                                   var text = xhr.responseText;
+                                   var arr = JSON.parse(text);
+                                   for (var i = 0; i < arr.length; i++) {
+                                       console.log(arr[i]);
+                                   }
+                               }
+                           }
+                       }
+                  }
+</script>
+</body>
+</html>

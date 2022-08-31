@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="OperationAndMaintenance" />
+        <module name="practical" />
+        <module name="un1" />
+        <module name="Redis" />
+        <module name="jdbc" />
+        <module name="ajax" />
+        <module name="Mybatis" />
+        <module name="ES" />
+        <module name="ts" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ajax" target="1.8" />
+      <module name="ES" target="1.8" />
+      <module name="jdbc" target="1.8" />
+      <module name="Mybatis" target="1.8" />
+      <module name="OperationAndMaintenance" target="1.8" />
+      <module name="practical" target="1.8" />
+      <module name="Redis" target="1.8" />
+      <module name="test" target="1.8" />
+      <module name="ts" target="1.8" />
+      <module name="un1" target="1.8" />
+      <module name="un2" target="1.8" />
+      <module name="Web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ES" options="-parameters" />
+      <module name="Mybatis" options="-parameters" />
+      <module name="OperationAndMaintenance" options="-parameters" />
+      <module name="Redis" options="-parameters" />
+      <module name="Web" options="-parameters" />
+      <module name="ajax" options="-parameters" />
+      <module name="jdbc" options="-parameters" />
+      <module name="practical" options="-parameters" />
+      <module name="test" options="-parameters" />
+      <module name="ts" options="" />
+      <module name="un1" options="-parameters" />
+      <module name="un2" options="" />
+    </option>
+  </component>
+</project>

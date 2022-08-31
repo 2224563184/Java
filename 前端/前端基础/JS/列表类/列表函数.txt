@@ -1,0 +1,35 @@
+valueOf()：				  返回数组本身
+
+toString()       	 		  把数组变成字符串
+
+push()：				  追加元素
+
+delete():              			  删除指定索引的元素
+
+unshift()：     			  头部添加元素
+
+shift()：      	  	 		  头部删除元素
+
+concat()         			  拼接数组  
+
+sort():          			  排序
+ 
+sort(function (a,b)     		  自定义排序
+
+reverse():       			  反转
+
+slice():                		  截取
+
+splice(开始索引,数量):   		  删除指定数量     
+  
+pop()：			 		  删除末尾元素
+
+forEach(f(参数,索引,别名){}) 		  遍历数组       
+        
+filter((循环变量)=>{         		  过滤
+return xxx
+}      
+ 
+sort((A,B)=>{retuen A-B})                 快速排序
+				
+					 

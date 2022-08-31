@@ -1,0 +1,6 @@
+ 
+T get() 						此线程的值。  
+protected      T initialValue() 			此线程的初始值  
+void              remove() 				删除此线程的值。  
+void              set(T value) 				设置此线程的值。  
+static            withInitial()				创建线程局部变量  

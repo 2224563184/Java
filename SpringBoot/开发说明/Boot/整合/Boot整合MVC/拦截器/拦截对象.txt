@@ -1,0 +1,3 @@
+        preHandle()                 拦截调用控制器之前执行该函数;  如果返回true, 则释放通过
+        afterCompletion()           拦截调用控制器之后执行该函数;
+	postHandle()               

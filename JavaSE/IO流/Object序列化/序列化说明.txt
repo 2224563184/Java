@@ -1,0 +1,8 @@
+
+
+                        序列化可以将内存中的对象保存到磁盘上
+
+
+
+1.实现Serializable接口
+2.增加序列化兼容:      static final long serialVersionUID = -7588980448693010399L;

@@ -1,0 +1,38 @@
+
+                              事务操作
+一.创建事务管理对象
+1.创建驱动对象
+2.创建连接池对象,注入驱动对象
+3.创建事务对象,注入连接池对象
+4.添加对应的配置:
+       xmlns:context="http://www.springframework.org/schema/context"    注解约束
+       xmlns:tx="http://www.springframework.org/schema/tx"              事务约束
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx.xsd
+      <aop:aspectj-autoproxy></aop:aspectj-autoproxy>                             切面,代理方法
+      <context:component-scan base-package="事务.声明式"></context:component-scan>  注解扫描
+  <tx:advice transaction-manager="事务管理对象" ></tx:advice>                        事务注解
+
+二.哪些方法使用事务
+1.在需要开启事务的方法上添加 @Transactional注解
+2.在 @Transactional 输入对应的参数 :
+(1) propagation     事务传播行为 : 有@Transactional的方法去调用了没有@Transactional的方法 或者 没有@Transactional的方法去调用了有@Transactional的方法
+                               ①  Propagation.REQUIRED:     如果A方法本身有事务,调用B方法之后, B方法跟随A方法里面事务,如果A方法本身没有事务,调用B方法之后,创建新事务
+                               ②  Propagation.REQUIRED_NEW: 使用A方法调用B方法,无论A方法是否有事务,都创建新的事务
+(2) ioslation       事务隔离级别 :
+                          脏读 : 未提交事务A读取到未提交事务B的更新改数据
+                     不可重复读 : 未提交事务A读取到提交事务后的更新数据
+                          幻读 : 未提交事务A读取到提交事务后的新数据
+                               ① READ UNCOMMITTED   无隔离
+                               ② READ COMMITTED     隔离脏读
+                               ③ REPEATABLE READ    隔离脏读\不可重复读
+                               ④ SERIALIZABLE       隔离脏读\不可重复读\幻读
+
+(3)  timeout         超时时间 :   (1)事务超出时间会进行回滚,默认值是-1不开启,设置时间以秒单位进行计算。
+(4) readOnly        是否只读 :   默认查询,无法增删改操作
+(5) rollbackFor     回滚  :     设置出现哪些异常就会进行事务回滚,默认对运行异常和崩溃异常进行回滚
+(6) norollbackFor   不回滚:     设置出现哪些异常就不会进行事务回滚
+
+       警告:  使用Spring的事务管理器,JdbcTemplate对象,必须是xml文件里面的,不能直接new对象
+

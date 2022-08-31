@@ -1,0 +1,16 @@
+
+
+                                Duration
+
+                  该类默认单位为秒,这个类是不可变的和线程安全的。
+
+
+
+static Duration ofDays(long days)          创建指定毫秒的时间对象
+static Duration between(开始日期, 结束)      创建剩余日期的时间对象
+
+
+
+
+
+

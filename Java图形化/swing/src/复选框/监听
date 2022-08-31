@@ -1,0 +1,5 @@
+获取复选框的 √ ×状态
+.addActionListener(new ActionListener() {
+             @Override
+             public void actionPerformed(ActionEvent e) {
+                复选框.isSelected();

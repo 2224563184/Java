@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/ES/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ajax/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ts/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/un1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/un2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/实战/jdbc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/实战/实用篇/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/实战/运维篇/src/main/java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

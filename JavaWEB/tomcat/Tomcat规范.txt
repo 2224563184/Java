@@ -1,0 +1,6 @@
+
+
+1.WEB项目要部署在  Tomcat服务器\webapps目录下
+2.WEB项目中的html文件, 必须放在  WEB项目\src\mian\webapp下
+3.WEB项目中的java程序, 必须放在  WEB项目\src\mian\java下
+4.java程序必须实现Servlet接口 或者 继承Servlet实现类

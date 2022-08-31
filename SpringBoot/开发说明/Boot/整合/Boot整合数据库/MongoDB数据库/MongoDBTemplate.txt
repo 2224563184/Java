@@ -1,0 +1,30 @@
+
+	添加
+
+insert(实体类) 或者 saver()
+
+
+
+
+
+        删除
+
+remove(Query 条件, Class<?> 实体类)
+
+
+
+
+
+	修改
+
+update(Query 条件, Update 具体值, Class<?> 实体类)         只修改第一行
+updateFirst(Query 条件, Update 具体值, Class<?> 实体类)    修改多行
+
+
+
+
+
+	查询
+
+find(Query 条件, Class<?> 实体类, 集合名称)                 查询所有
+find(Query 条件, Class<?> 实体类, 集合名称)                 条件查询

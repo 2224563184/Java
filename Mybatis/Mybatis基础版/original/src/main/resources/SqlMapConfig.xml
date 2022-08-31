@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+          "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+<!--  properties 调用数据源配置文件,  url属性:绝对路径的文件,
+                          resource属性:resources包中的相对路径文件                        -->
+<properties  resource="druid.properties"> </properties>
+<!-- 日志输出<setting name="logImpl">,   value属性:STDOUT_LOGGING  使用 "System.out" 输出-->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+<!-- environments数据库环境配置, default属性:使用哪个数据源 -->
+    <!--  相对路径设置别名  -->
+    <typeAliases>
+        <typeAlias type="com.bjpowe.Test.User" alias="Student"></typeAlias>
+    </typeAliases>
+
+ <environments default="A">
+<!--   environment数据源环境 id属性:数据源名称  -->
+     <environment id="A">
+<!--  transactionManager事务配置器;   type属性="JDBC" 程序员控制事务  , type属性="MANAGED"  框架控制事务    -->
+         <transactionManager type="JDBC"></transactionManager>
+<!--  dataSource配置数据源标签;
+         type属性:
+         1.JNDI:JAVA命名目录接口, 在服务器端进行数据库连接池的管理
+         2.POOLED:使用数据库连接池
+         3.UNPOLLED:数据库连接池-->
+         <dataSource type="POOLED" >
+             <property name="driver" value="${driver}"/>
+           <property name="url" value="${url}"/> <!-- 用文件中的数值赋值给框架选择的数据源属性 -->
+             <property name="username" value="${username}"/>
+             <property name="password" value="${password}"/>
+         </dataSource>
+     </environment>
+ </environments>
+
+
+<!-- mapper映射器,    resource属性: resources包中的相对路径文件
+                            url属性: 绝对路径
+                          class属性: 动态代理的方式注册     -->
+    <mappers>
+        <mapper resource="SQL.xml" ></mapper>
+    </mappers>
+
+</configuration>

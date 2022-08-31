@@ -1,0 +1,4 @@
+
+
+1.add(Stirng Kye, Object Value):  绑定共享对象和Model对象,并且给Model对象设置名称
+2.setViewName(Stirng  name):      绑定视图

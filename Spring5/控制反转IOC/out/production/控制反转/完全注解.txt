@@ -1,0 +1,7 @@
+
+1.创建一个类
+2.使用注解:
+@Configuration                       //作为配置类,替代xml配置文件
+@ComponentScan(basePackages ="包")    //扫描指定的包              包: 相对路径的文件夹
+
+3.加载配置类 new  AnnotationConfigApplicationContext(类名.class)

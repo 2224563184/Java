@@ -1,0 +1,11 @@
+
+
+
+		@TableName
+
+  该注解映射指定的数据表, 可以省略编写数据表的步骤
+
+
+
+@TableName("xxx数据表")
+警告: @TableName 注解只针对 "BaseMapper"该接口的函数有效, 其他自定义的函数都是无效的

@@ -1,0 +1,27 @@
+
+介绍: 该风格统一请求路径简化开发, 根据不同请求方式响应不同的函数
+
+
+使用说明:
+	   1. 在控制器上方映射请求路径     	  @RequestMapping("xxx路径")
+           2. 在函数上添加不同的请求方式注解	   @PostMapping    @PostMapping  @PutMapping
+         
+	 总结: 请求路径一致, 请求方式不同
+
+@Contorller
+ @RequestMapping
+
+public class xxx{
+
+  @GetMapping 
+ String  xxx(){};
+
+   @PutMapping 
+ String  xxx(){};
+
+  @PostMapping 
+ String  xxx(){};
+
+}
+
+

@@ -1,0 +1,51 @@
+整个框架的代码基于java8
+通过使用泛型等特性提高可读性
+对java8提高直接的代码支撑
+运行时兼容JDK9
+Java EE 7API需要Spring相关的模块支持
+运行时兼容Java EE8 API
+取消的包,类和方法
+包beans.factory.access
+包dbc.support.nativejdbc
+从spring-aspects 模块移除了包mock.staicmock,
+不再提AnnotationDrivenStaticEntityMockingControl支持
+许多不建议使用的类和方法在代码库中删除
+
+
+
+核心特性
+JDK8的增强:
+访问Resuouce时提供getFile或和isFile防御式抽象
+有效的方法参数访问基于java 8反射增强
+在Spring核心接口中增加了声明default方法的支持一贯使用JDK7 Charset和StandardCharsets的增强
+兼容JDK9
+Spring 5.0框架自带了通用的日志封装
+持续实例化via构造函数(修改了异常处理)
+Spring 5.0框架自带了通用的日志封装
+spring-jcl替代了通用的日志,仍然支持可重写
+自动检测log4j 2.x, SLF4J, JUL (java.util.Logging)而不是其他的支持
+访问Resuouce时提供getFile或和isFile防御式抽象
+基于NIO的readableChannel也提供了这个新特性
+
+
+             新功能总结
+
+
+一. 不建议的类和方法在代码库中删除
+二. Spring框架自带了通用的日志封装
+1. Spring5 删除了Log4jConfigListener.jar , 建议使用 Log4j.jar集合包版本以上 2.00.0
+①log4j-api-2.11.2.jar
+②log4j-core-2.11.2.jar
+③log4j-slf4j-impl-2.11.2.jar
+④slf4j-api-1.7.30.jar
+2.创建log4j2.xml文件
+
+       控制反转
+三.Spring5核心容器支持注解式     @Nullable
+四.Spring5核心容器支持函数式     GenericApplicationContext类
+
+
+五.Spring5支持JUnit5
+1.导入JUnit5.jar
+2.导入spring-test-5.3.15.jar
+

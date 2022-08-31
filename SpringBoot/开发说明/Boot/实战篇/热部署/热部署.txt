@@ -1,0 +1,14 @@
+1. pom.xml导入该依赖
+      <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+
+2.设置-构建-编译器-自动构建项目 
+
+3.Alt+CTRL+SHIRT+/ 打开compiler.automake.allow.when.app.running 或者 设置-高级设置-编译器-自动make启动
+
+4.iDEA启动项目
+
+总结: 使用此操作, iDEA失焦5秒以后会自动构建项目

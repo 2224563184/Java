@@ -1,0 +1,39 @@
+
+
+		   A环境
+ <profiles>
+    <profile>
+      <id>dve_env</id>
+      <properties>
+#定义动态标签
+        <profile.active>dve</profile.active>
+      </properties>
+#默认该环境
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+    </profile>
+  </profiles>
+
+
+		  B环境	
+ <profiles>
+    <profile>
+      <id>dve_pro</id>
+      <properties>
+        <profile.active>pro</profile.active>
+      </properties>   
+    </profile>
+  </profiles>
+
+
+		  C环境
+ <profiles>
+    <profile>
+      <id>dve_tim</id>
+      <properties>
+        <profile.active>tim</profile.active>
+      </properties>      
+    </profile>
+  </profiles>
+

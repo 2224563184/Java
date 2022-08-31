@@ -1,0 +1,5 @@
+
+CREATE DATABASE dbname DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
+CREATE  DATABASE    [ IF NOT EXISTS ] 文件夹命名 [DEFAULT] CHARACTER SET [ = ] charset_name; #创建
+SHOW DATABASES               查看所有数据库
+DROP DATABASE 文件夹名称;　　#删除

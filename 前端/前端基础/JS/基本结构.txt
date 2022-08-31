@@ -1,0 +1,13 @@
+
+
+                            JavaScript的数据类型
+
+数值类型:                     number
+字符串类型:                   string
+对象类型:                     object
+布尔类型:                     boolean
+函数类型:                     function
+
+
+
+

@@ -1,0 +1,12 @@
+new   VueRouter （{
+
+router：[
+
+
+ // name:  参数名称， 可以接收任意值
+
+{ path:'请求路径:name'，
+   Component：’组件名‘}
+]
+}）
+

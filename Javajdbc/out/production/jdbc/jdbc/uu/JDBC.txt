@@ -1,0 +1,182 @@
+
+                            切忌: 执行了后要关闭资源
+警告: 需要导入mysql的jar包
+
+
+                     方式1
+固定格式:
+                    ①注册驱动
+  (1).定义驱动类: Driver driver = new com.mysql.Driver();  Driver驱动类静态代码块自动加载驱动
+
+                  ②得到连接
+  (1).定义连接:                        String url = "jdbc:mysql://ip:端口/数据库?characterEncoding=utf-8" :固定格式
+  (2).定义Properties对象:              Properties properties = new Properties();
+  (3).设置Properties对象:
+      setProperty("user","账号"):     设置账号
+      setProperty("password","密码"): 设置密码
+  (4).得到连接对象 Connection:         Connection connection  = Driver.connect(url,Properties对象);
+  (5).Connection设置事务:             目录:51
+
+                  ③执行sql
+  (1).使用连接返回其中一个sql对象:
+     1.返回PreparedStatement:          connection.prepareStatement    目录: 50
+     2.返回CallableStatement:          connection.prepareCall
+     3.返回Statement:                  connection.createStatement     不推荐第一代,不支持动态SQL语句
+                                                                     \会出现SQL注入\需要拼接字符串
+
+  (2).
+                  ④关闭连接
+   (1).                               连接对象.close();
+   (2).                               预编译对象.close();
+   (3).                               结果集对象.close();
+本质: Mysql连接相当于之前学过的Socket连接
+
+
+                    方式2
+                  ①注册驱动
+  (1).                                 Class driverClass =  Class.forname("com.mysql.Driver");
+  (2).                                 driverClass.newInstance();
+
+                  ②得到连接
+    (1).定义连接:                        String url = "jdbc:mysql://ip:端口/数据库" :固定格式
+    (2).定义Properties对象:              Properties properties = new Properties();
+    (3).设置Properties对象:
+        setProperty("user","账号"):     设置账号
+        setProperty("password","密码"): 设置密码
+    (4).得到连接:                        Connection connection  = Driver.connect(url,Properties对象);
+    (5).Connection设置事务:              目录:51
+
+                    ③执行sql
+      (1).定义sql语句:  String sql="sql语句";
+      (2).返回执行对象:  Statement statement =  connection.createStatement();
+      (3).开始执行:     statement.execute();
+
+                    ④关闭连接
+      (1).                               连接对象.close();
+      (2).                               预编译对象.close();
+      (3).                               结果集对象.close();
+  本质: 同上,只是换成反射式
+
+
+                  方式3
+
+                ①注册驱动
+  (1). 获取class类:              Class.forName("com.mysql.jdbc.Driver")
+  (2). 定义对象:                 类.newInstance();
+  (3). 注册驱动:                 DriverManager.registerDriver(反射对象);
+
+                ②得到连接
+  (1).定义连接:                        String url = "jdbc:mysql://ip:端口/数据库" :固定格式
+  (2). 定义账号密码:              String user="";  String password="";
+  (3). 开始连接                  DriverManager.getConnection(url, user,password);
+  (4).Connection设置事务:        目录:51
+                ③执行sql语句
+  (1).使用连接返回其中一个sql对象:
+       1.返回PreparedStatement:          connection.prepareStatement    目录: 50
+       2.返回CallableStatement:          connection.prepareCall
+       3.返回Statement:                  connection.createStatement     不推荐第一代,不支持动态SQL语句
+                                                                       \会出现SQL注入\需要拼接字符串
+
+                ④关闭资源
+
+
+                    方式4
+
+                ①注册驱动
+  (1). 获取Class类:   Class.forName("com.mysql.jdbc.Driver")
+
+                ②得到连接
+  (1).定义连接:                        String url = "jdbc:mysql://ip:端口/数据库" :固定格式
+  (2). 定义账号密码:              String user="";  String password="";
+  (3). 开始连接:                 Connection connection  DriverManager.getConnection(url, user,password);
+  (4). Connection设置事务:       目录:51
+
+                ③执行sql语句
+ (1).使用连接返回其中一个sql对象:
+     1.返回PreparedStatement:          connection.prepareStatement    目录: 50
+     2.返回CallableStatement:          connection.prepareCall
+     3.返回Statement:                  connection.createStatement     不推荐第一代,不支持动态SQL语句
+                                                                     \会出现SQL注入\需要拼接字符串
+
+                ④关闭资源
+ (1).                           连接对象.close();
+ (2).                           预编译对象.close();
+ (3).                           结果集对象.close();
+
+                    方式5
+
+                ①自动注册驱动
+
+                ②得到连接
+  (1). 定义账号密码:              String user="";  String password="";
+  (2). 开始连接:                 Connection  connection   =  DriverManager.getConnection(url, user,password);
+  (3). Connection设置事务:       目录:51
+
+  老韩提示:
+  1. mysqL驱动516可以无需 CLass. forName(“ com.mysql jdbc. Driver';
+  2.从jdk15以后使用了jdb4不再需要显示调用 class. forName()注册驱动而是自动调用驱动jar包下 META-INF\ services java. sql, Driver文本中的类名称去注册
+  3.建议还是写上 CLass. forName(")
+
+                 ③执行sql语句
+ (1).使用连接返回其中一个sql对象:
+     1.返回PreparedStatement:          connection.prepareStatement    目录: 50
+     2.返回CallableStatement:          connection.prepareCall
+     3.返回Statement:                  connection.createStatement     不推荐第一代,不支持动态SQL语句
+                                                                     \会出现SQL注入\需要拼接字符串
+
+                 ④关闭资源
+ (1).                           连接对象.close();
+ (2).                           预编译对象.close();
+ (3).                           结果集对象.close();
+
+
+
+
+
+
+
+50:
+                   PreparedStatement常用方法
+1.SQL增删改
+警告: 在SQL语句中,数值需要先设置为占位符 "?",然后再调用方法来操作占位符并且执行 execute();
+
+ addBatch():                                                     给对象添加SQL语句
+ setString(int parameterIndex, String x):                        更新String类型的占位符
+ setInt(int parameterIndex, int x):                              更新int类型的占位符
+ setObject(int parameterIndex, Object x):                        更新任意类型的占位符
+ execute():                                                      执行对象的SQL语句
+ executeQuery():                                                 执行对象的SQL语句,并且返回结果集对象 ResultSet
+ close():                                                        关闭资源
+ clearParameters():                                              删除
+ setAsciiStream(int parameterIndex, InputStream x):              将列记录设置为输入流
+ setAsciiStream(int parameterIndex, InputStream x, int length):  先将列记录转换成 "字节",然后设置为输入流
+ setAsciiStream(int parameterIndex, InputStream x, long length): 先将列记录转换成 "字节",然后设置为输入流
+
+
+2.SQL查询
+                    ResultSet常用方法
+
+next():                                                      将光标从当前位置向下移动一行,返回一个boolean结果
+get...(int columnIndex):                                     返回当前行指定位置的数值
+close():                                                     关闭资源
+
+
+
+
+51:                  Connection对象
+
+void rollback():                            回退初始点
+void rollback(Savepoint savepoint):         回退指定保存点
+void setAutoCommit(boolean autoCommit):     自动提交事务, 默认开启.
+void commit():                              提交事务并且释放事务锁
+
+
+事务基本介绍
+1, JDBC程序中当一个Connection对象创建时,默认情况下是自动提交事务:
+    每次执行一个SQL语句时,如果执行成功,就会向数据库自动提交,而不能回滚。
+2, JDBC程序中为了让多个SQL语句作为一个整体执行,需要使用务
+3,调用Connection的setAutoCommit(false)可以取消自动提交事务
+4,在所有的SQL语句都成功执行后,调用Commit();方法提交事务
+5,在其中某个操作失败或出现异常时,调用rollback();方法回滚事务
+
+ps: 默认开启事务并且SQL语句执行完后会自动提交,如果为了保证原子性要关闭自动提交,当所有语句执行正确以后再提交事务

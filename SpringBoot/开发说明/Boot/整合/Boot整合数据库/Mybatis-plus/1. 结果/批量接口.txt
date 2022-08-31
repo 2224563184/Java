@@ -1,0 +1,86 @@
+
+		IService
+
+
+介绍:  复用之前的接口,添加了一些批量操作
+
+		
+
+
+		 批量添加
+
+
+save(T 实体类)                                     
+save(List<实体类>  arr)
+saveBatch(数据结构<实体类>)         	
+saveBatch(数据结构, 每次执行数量);	 
+
+
+
+
+
+		批量修改
+
+
+saveOrUpdateBatch(数据结构<实体类>)			批量修改
+saveOrUpdateBatch(数据结构<实体类>, 每次执行数量);	批量修改
+updateById 						iD修改
+updateBatchById						iD批量修改
+updateBatchById(每次修改数量)				iD批量修改
+update(条件对象)					条件修改
+update(实体类, 条件对象)				条件修改
+
+
+
+
+
+
+
+		查询
+
+
+
+getOne(条件对象 query) 		 查询一行
+getMap(条件对象)		 查询所有
+     
+
+
+
+
+		删除
+
+
+
+removeById(Serializable id)      ID 删除
+removeById(实体类) 	         是否ID 删除
+removeBatchByIds		 ID 批量删除
+removeBatchByIds		 是否ID 批量删除
+removeBatchByIds(每次删除数量)   批量删除
+removeBatchByIds(每次删除数量)   是否批量删除
+removeByIds(数据结构<实体类>)    是否批量删除
+removeByIds(数据结构<实体类>)    批量删除
+removeById(实体类)		 条件删除
+removeByMap(Map)		 条件删除
+remove(条件对象)		 条件删除
+
+
+
+
+使用要求:
+
+1. 定义实体类
+   (1)添加映射表注解             @TabName
+   (2)设置默认雪花主键
+
+2.定义映射接口        
+  (1)继承基础映射接口           extends  BaseMapper
+  (2)泛型实体类                      <实体类>
+
+3. 定义服务接口
+    (1)继承服务接口                 extends   IServic
+    (2)泛型实体类                  <实体类>
+
+4. 实现服务接口                    
+    (1)实现数据表服务接口            imoments  服务接口
+    (2)继承服务实现类                  extends        Servicelmpl
+    (3)泛型：映射接口和实体类    <映射接口, 实体类> 

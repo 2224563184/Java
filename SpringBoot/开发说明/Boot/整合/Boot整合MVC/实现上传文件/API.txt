@@ -1,0 +1,13 @@
+package org.springframework.web.multipart. MultipartFile 		文件对象
+
+String getName();				原始文件名
+boolean isEmpty();				数据判空
+transferTo(File dest)			把数据输出到指定的文件
+
+getInputStream()				返回输入流
+byte[] getBytes()				返回数据
+String getOriginalFilename();	          内容类型
+
+
+
+

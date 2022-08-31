@@ -1,0 +1,45 @@
+
+		 com.baomidou.mybatisplus.core.toolkit.StringUtils
+		
+
+
+
+isBlank(): 		是否全部空白字符
+
+isCapitalMode()		是否全部大写字母
+
+containsUpperCase()     是否包含大写字母
+
+checkValNotNull         是否有字符串
+
+CharSequence()          是不是字符串
+
+sqlInjectionReplaceBlank  SQL语句, 删除空白参数值
+
+sqlArgsFill		填充占位符
+
+isMixedMode		是否为驼峰下划线混合命名
+
+removePrefixAfterPrefixToLower() 删除前面的字符后,首字母变成小写
+
+sqlParam()		获取SQL语句的列值
+
+isCamel():		是否驼峰命名
+
+prefixToLower()		前面几个必须小写
+
+endsWith()              判断最后的字符, 大小敏感
+
+camelToHyphen()		驼峰转连字符
+
+isNotColumnName()       是否和列名相同
+
+getTargetColumn()	获取映射列名
+
+camelToUnderline	驼峰转下划线格式
+
+underlineToCamel()	下划线传驼峰
+
+firstToLowerCase()	首字母转换小写
+
+equals()		地址或内容是否相同

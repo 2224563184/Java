@@ -1,0 +1,30 @@
+
+
+一.创建Bean对象
+
+1.导入约束
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:p="http://www.springframework.org/schema/p"
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+
+2. 添加 context标签并且开启扫描器  <context:component-scan base-package"扫描文件包"
+
+3. 使用以下注解创建Bean对象:
+@Component(value="bean对象名称")        普通组件层
+@service(value="bean对象名称")          逻辑层或者业务层
+@Controller(value="bean对象名称") .     外部层
+@Repository(value="bean对象名称")       Dao层或者持久层
+
+*上面四个注解功能是一样的,都可以用来创建bean实例对象
+
+二.注入属性
+ @Autowired                注入同类
+ @Quaifier(value="")       注入同名
+ @Resource                 复合式注入
+ @value                    注入指定参数
+
+
+

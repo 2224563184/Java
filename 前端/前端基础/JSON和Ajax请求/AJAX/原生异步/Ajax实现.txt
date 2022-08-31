@@ -1,0 +1,4 @@
+		
+
+
+    开启请求对象的异步操作: XMLHttprequest.opsn(xxx,xxx,true)

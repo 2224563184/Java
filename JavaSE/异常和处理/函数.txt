@@ -1,0 +1,5 @@
+String    getMessage() 			           详细的异常内容
+String     toString()					 简单的异常内容
+StackTraceElement [] getStackTrace()		 最详细的异常内容
+void 	    printStackTrace()			 详细的异常内容，输出到控制台
+Throwable	 getCause()				 异常原因

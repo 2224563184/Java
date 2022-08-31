@@ -1,0 +1,12 @@
+Lock是接口，不能直接实列化，，需要采用实现类来实列化
+
+Lock方法：
+void Lock():   获得锁
+void unlock(): 释放锁
+
+
+         lock();
+
+         语句体
+
+         unloc();

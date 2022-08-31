@@ -1,0 +1,5 @@
+@Data:  
+	1.自动生成无参构造
+        2.自动生成set/get
+        3.自动重写toString()
+	4.自动重写equeals()

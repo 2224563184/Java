@@ -1,0 +1,11 @@
+
+一.  注册Bean
+ 1. 六种注册方式
+
+
+
+二. 获取Bean
+
+1. 获取容器            SpringApplication.run（启动类.class, args)
+2.容器.Bean（）
+警告:  在启动类里面调用Bean对象，必须采用此方法

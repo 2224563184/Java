@@ -1,0 +1,6 @@
+Update( sql语句, 填充占位符):                                                增删改操作
+     batchUpdate(List<arr[]> list)                                        批量添加,批量填充占位符
+List<T>                 query(sql, new BeanPropertyRowMapper<>(反射对象),);   返回全行记录
+<T> T	queryForObject(String sql, Class<T> requiredType, Object... args):   返回一个记录
+<T> T	queryForObject(String sql, RowMapper<T> rowMapper, Object... args):  返回一行记录
+

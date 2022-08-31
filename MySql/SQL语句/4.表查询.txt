@@ -1,0 +1,29 @@
+
+
+
+查询语法: SELECT * FROM 表名称
+
+
+
+
+SLECT * FROM 表名称:     子查询
+WHERE(查询语句)    
+
+EXISTS :                 子查询只要出现一条返回true, 如果一条没有就返回false
+
+SLECT * FROM (查询语句):  子表    
+
+
+
+
+
+
+JOIN两张表合并:
+
+数据表  INNER JOIN  数据表 NO 判断条件：两张表的列记录匹配上就返回行
+
+数据表  LEFT JOIN   数据表 NO 判断条件：右表行匹配上就返回该值,没匹配上右表行就返回NULL
+
+数据表  RIGHT JOIN  数据表 NO 判断条件：左表行匹配上就返回该值,没匹配上左表行就返回NULL
+
+数据表  FULL JOIN   数据表 NO 判断条件：两张表的列记录有一个匹配，返回所有行;  MySql不支持!!!!

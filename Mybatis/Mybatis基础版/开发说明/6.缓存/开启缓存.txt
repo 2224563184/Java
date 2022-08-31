@@ -1,0 +1,21 @@
+
+
+
+	开启1级缓存
+
+1级缓存默认开启 
+
+
+
+
+
+ 	开启2级缓存
+
+1.核心配置文件中, 添加此标签<setting name="cacheEnabled" value="true"/>
+2.映射配置文件中, 添加此标签
+
+<cache
+  eviction="FIFO"
+  flushInterval="60000"
+  size="512"
+  readOnly="true"/>

@@ -1,0 +1,21 @@
+
+
+                     Session
+
+       Session是用来保存状态的, 当浏览器请求敏感的请求路径时,必须要有指定状态才能进行访问
+   Session对象提供了2个属性
+1.name:   给Session对象设置名称
+2.value:  给Session对象设置数值
+
+
+
+                  Session生命周期
+
+1.Session默认放在服务器内,  它的生命周期是关闭浏览器之前
+2.Session的可以放在浏览器中减小服务器的压力, 放在浏览器的Session生命周期可以设置的
+
+
+
+
+
+

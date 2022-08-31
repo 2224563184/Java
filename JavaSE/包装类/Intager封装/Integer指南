@@ -1,0 +1,11 @@
+.Max_Value　                     　int 类型能够表示的最大值。
+.Min_Value　　                     int 类型能够表示的最小值。
+parseInt(String s)   　            将数字String转成int
+parseInt(String s, int radix)     转换进制
+valueOf( String s)　　             将数字int转成String
+valueOf( int    i)                (-128~127)  限制范围内返回缓存对象,超出范围创建一个新对象
+bitCount( num)　　　                返回计算指定数字二进制编码中的1的个数　
+
+总结: -128~127是整数常量池, 在这个范围内使用 "Integer.valueOf()" 创建的对象会指向
+      整形常量池对象, 所以两个对象在-128~127范围内使用 Integer.valueOf() 创建出来的对象都是同一个对象
+

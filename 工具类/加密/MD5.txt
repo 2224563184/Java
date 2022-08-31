@@ -1,0 +1,4 @@
+package org.springframework.util.DigestUtils
+
+
+static  String   md5DigestAsHex(  Byte[] byte )       MD5加密

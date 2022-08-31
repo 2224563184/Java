@@ -1,0 +1,50 @@
+一.<properties>: 数据源配置文件
+       resource属性: 相对路径
+          class属性: 绝对路径
+
+二.<setting name= "" value="STDOUT_LOGGING"/>:          日志输出
+     	 name属性:  "logImpl"        		        Mybatis内置日志功能
+        value属性:  SLF4J 				 		 		  使用SLF4J日志框架实现(
+		    LOG4J             		        日志输出到     			  使用Log4J日志框架实现(1.x版本)
+		    LOG4J2				  	   			  使用Log4J日志框架实现(2.x版本)
+		    JDK_LOGGING        							  使用java.util.logging实现
+	            COMMONS_LOGGING       						  使用Apache Commons Logging实现
+		    STDOUT_LOGGING			日志输出到控制台,		  使用System.out实现 [不需要依赖]
+                    NO_LOGGING   			不打印日志
+
+
+三.<typeAlias>   数据类型    重点!!!
+     type属性:   相对路径
+    alias属性:   别名		
+
+三.<package/>    数据类型
+     name属性:   相对路径下的任意类
+
+
+四.<environments>: 多个数据源运行环境
+  1.<environment>: 使用指定数据源
+           iD属性: 名称
+
+  2.<transactionManager>:事务管理器
+                type属性: "JDBC"程序员控制事务, "MANAGED" MyBatis控制事务
+
+  3.<dataSource>: 数据源                                        
+        type类型: "POOLED"使用数据库连接池, "JNDI"JAVA命名目录接口, 在服务器端进行数据库连接池的管理    "UNPOLLED"不使用连接池
+
+  4.<property>:   数据源属性
+        name数据源属性: "url, driver, username, password"  
+        value属性赋值: ${}, 获取数据源配置文件中指定属性的值
+
+ 五.<mappers>: 注册多个SQL配置文件
+   1.<package> 注册SQL配置文件
+  (1)name属性: 扫包; 必须使用"/"
+
+   2.<mapper>: 注册SQL配置文件
+      url属性: "file:+绝对路径"
+ resource属性: 相对路径
+    class属性: 1.接口的相对路径,
+               2.接口名称和映射文件名称一致
+               3. 必须使用 "." 
+
+
+

@@ -1,0 +1,18 @@
+                                                   
+ 
+<resultMap >    Map标签
+     id属性:    标签名称
+   type属性:    结果集泛型
+
+     <result>   任意对象
+property属性:   对象属性
+  column属性:   关联列名称
+
+	二选一
+<association>   内置对象   
+<collection>    内置数据结构
+
+property属性:	内置对象的名称
+javaType属性:	内置对象的结果集泛型
+  column属性:   关联列名称, 也可以是两个对象相同的属性名称
+

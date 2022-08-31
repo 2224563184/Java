@@ -1,0 +1,27 @@
+org.springframework.web.filter.CharacterEncodingFilter
+encoding属性: 字符集
+
+    
+
+
+  <filter>
+<!-- 创建对象, 设置对象名称 -->
+    <filter-name>filter</filter-name> 
+<!-- 该对象的相对路径 -->
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+<!-- 初始化(静态代码快) -->
+    <init-param>
+<!-- 选择该对象的指定属性 -->
+      <param-name>encoding</param-name>    
+<!-- 给属性赋值 -->
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+
+
+ <filter-mapping>
+<!-- 调用此对象 -->
+    <filter-name>filter</filter-name>
+<!-- 指定的请求路径 -->
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>

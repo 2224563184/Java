@@ -1,0 +1,7 @@
+// 路由容器
+< router-vivew>
+
+//调用路由
+<  router-linke>
+<h1>xxx {{ router.path.路径
+</router-vivew>

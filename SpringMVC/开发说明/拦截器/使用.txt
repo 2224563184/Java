@@ -1,0 +1,30 @@
+
+
+                                拦截器
+
+            拦截器用来拦截控制器执行函数之前 或者 在控制器执行函数后拦截
+
+
+使用方法:
+
+
+一. 变成拦截器
+		1.实现该接口: HandlerInterceptor (推荐)
+		2.继承该类:   HandlerInterceptorAdapter
+
+
+
+二. 注册拦截器
+		   <!-- 配置拦截器 -->
+		  <mvc:interceptors>    
+   		   <!-- 拦截部分请求 -->
+  		  <mvc:interceptor>
+   	         <!-- 要拦截的请求路径 -->
+     		   <mvc:mapping path="/**" />
+      		  <!-- 不用拦截的请求路径 -->
+     		   <mvc:exclude-mapping path="" />
+   		  <bean class="拦截器" />
+   		 </mvc:interceptor>
+		  </mvc:interceptors>
+
+三.preHandle的返回值是true

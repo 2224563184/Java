@@ -1,0 +1,33 @@
+一、
+Canvas绘图：
+      程序中绘图和画画一样，也需要画布、画笔、颜料等。AWT中提供了Canvas类充当画布，Graphics类来充当画笔
+   然后通过调用Graphics对象setColor()方法来给画笔添加颜色
+
+   使用步骤：
+           1.自定义类，继承Canvas，重写paint()方法完成画图；
+           2.在paint()方法内部画图之前，需要设置Graphics类对象的setColor()、setFont()等设置画笔的颜色、字体...
+           3.调用Graphics画笔的drawXxx()方法开始画图
+
+二、
+   画图的核心在于使用Graphics画笔，Graphics类中常用方法：
+        abstract void setColor(Color c)                                                                 设置颜色
+        abstract void setFont(Font font)                                                                设置字体
+        abstract void drawPolyline(int[] xPoints, int[] yPoints, int nPoints)                           绘制直线
+                 void drawRect(int x, int y, int width, int height)                                     绘制矩形
+        abstract void drawRoundRect(int x, int y, int width, int height, int arcWidth, int arcHeight)   绘制圆角矩形
+        abstract void drawOval(int x, int y, int width, int height)                                     绘制椭圆形
+        abstract void drawPolygon(int[] xPoints, int[] yPoints, int nPoints)                            绘制多边形
+        abstract void drawArc(int x, int y, int width, int height, int startAngle, int arcAngle)        绘制圆弧
+        abstract void drawPolyline(int[] xPoints, int[] yPoints, int nPoints)                           绘制折线
+        abstract void fillRect(int x, int y, int width, int height)                                     填充矩形区域
+        abstract void fillRoundRect(int x, int y, int width, int height, int arcWidth, int arcHeight)   填充圆角矩形区域
+        abstract void fillOval(int x, int y, int width, int height)                                     填充椭圆区域
+        abstract void fillPolygon(int[] xPoints, int[] yPoints, int nPoints)                            填充多边形区域
+        abstract void fillArc(int x, int y, int width, int height, int startAngle, int arcAngle)        填充圆弧对应的扇形区域
+        abstract boolean drawImage()                                                                    绘制位图
+
+三、
+   Canvas类：
+       void paint(Graphics g)                                                                           绘制这个画布
+       void repaint(Graphics g)                                                                         重新绘制这个画布
+
